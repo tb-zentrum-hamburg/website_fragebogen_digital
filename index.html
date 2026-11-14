@@ -538,8 +538,7 @@ body{font:18px/1.6 Arial,"Helvetica Neue",Helvetica,"Noto Sans",sans-serif}
 <symbol id="ic-faq" viewbox="0 0 24 24"><path d="M3.5 3.5h17v14.5H11.6L7.2 21.8V18H3.5z"></path><path d="M9.9 8.8a2.1 2.1 0 1 1 4.2 0c0 1.4-2.1 1.7-2.1 3.4"></path><path d="M12 14.7h.01"></path></symbol>
 <symbol id="ic-occupational-health" viewbox="0 0 24 24"><path d="M4 8.5h16v10.5H4z"></path><path d="M8.5 8.5V6.5h7v2"></path><path d="M12 11v5M9.5 13.5h5"></path></symbol> <symbol id="ic-workplace" viewbox="0 0 24 24"><path d="M3.5 20.5V4h10.5v7"></path><path d="M3.5 20.5h5"></path><path d="M6 7h2v2H6zM10 7h2v2h-2zM6 11.5h2v2H6z"></path><path d="M6 20.5v-3.2h2.4v3.2"></path><circle cx="17" cy="16.5" r="5" style="fill:var(--tci,#e8eef5)"></circle><path d="M17 14v5M14.5 16.5h5"></path></symbol>
 </defs></svg>
-<!--
-VERSION 3.46-D5 (04.11.2026): Georgisch: sprachliche Korrekturen nach Pruefung (wie Website 3.46).
+<!-- VERSION 3.47-D6 (14.11.2026): Stand wie Website 3.47; ausfuellbares PDF angepasst (Altersfeld entfernt, Auswahl NEIN/JA bei 1.6.3, Feld Unterschrift). Fragebogen an die neue Fassung (Seiten 3-4 der Einladung) angepasst, alle 42 Sprachen: 1.6.3 mit Auswahl NEIN/JA zur Frage "Erkrankte Person bekannt?"; Altersfeld im Kopf entfernt (nur Nachname, Vorname, Geburtsdatum, Geschlecht); Einwilligung E-Mail mit Unterschriftsfeld. Uebersetzung "Unterschrift" ist ein Entwurf (KI-Uebersetzung) und soll von Muttersprachlern geprueft werden. VERSION 3.46-D5 (04.11.2026): Georgisch: sprachliche Korrekturen nach Pruefung (wie Website 3.46).
 VERSION 3.45-D4 (04.11.2026): Georgisch (ka) als 42. Sprache ergaenzt (Stand wie Website 3.45): alle sieben Seiten, Sprachauswahl, Titel-, Kontakt- und Vorlesetexte sowie Hinweis, Download-Knopf und Verschluesselungstexte fuer das ausfuellbare PDF. Uebersetzung ist ein Entwurf (KI-Uebersetzung) und soll von Muttersprachlern geprueft werden.
 VERSION 3.44-D3 (04.11.2026): Digitale Fassung (Fragebogen als ausfuellbares PDF) auf den Stand 3.44 der Website gebracht: alle Aenderungen der Website uebernommen (41 Sprachen, Sprach-Dropdown, Themenbilder, aktualisierter Fragebogen, Pruefung der Uebersetzungen, Startblitz-Fix, Hamburg-Sans). Digitale Funktionen unveraendert uebernommen: Download des ausfuellbaren PDFs, PDF-Verschluesselung mit Aktenzeichen, Aktenzeichen aus dem QR-Link. Hinweistexte: Satz, die Seite sei nur eine Uebersetzungshilfe bzw. man koenne hier nicht ausfuellen, in allen 41 Sprachen entfernt. Ausfuellbares PDF an die neue Papierfassung angepasst (Husten nur ueber 3 Wochen, E-Mail-Adresse als 2 x 26 Kaestchen, Passwortsatz entfernt; die Vorgangsnummer des Falls aus Octoware bleibt das Passwort der Verschluesselung). Hinweistexte, Download-Schaltflaeche und Verschluesselungsbereich in allen 41 Sprachen (neu: Nepali, Zulu, Indonesisch, Tagalog, Ungarisch als Entwurf).
 VERSION 3.44 (29.10.2026): Pruefung der Uebersetzungen eingearbeitet (27 inhaltliche Korrekturen, u.a. Verharmlosung "leicht behandelbar" in Englisch, Hausa, Nepali, Zulu, Indonesisch, Tagalog korrigiert; Uebertragung ueber Ausatemluft in Franzoesisch, Russisch, Spanisch, Ukrainisch; Tuerkisch "enfekte"; Zulu/Tagalog-Fragen vollstaendig), Vorbelegung "weiblich" im Fragebogen aller 41 Sprachen entfernt, 52 Vollbreiten-Fragezeichen normalisiert. Ausserdem Startblitz-Fix: Beim Start blitzt nicht mehr kurz die Sprachauswahlseite auf (Inhalt bleibt bis zur Sprachbestimmung unsichtbar, Sprachauswahlseite dauerhaft ausgeblendet).
@@ -722,7 +721,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <section class="question personal" data-question="personal" id="de-q-personal">
 <p>Bitte tragen Sie zur Überprüfung Ihre Daten ein, damit wir Sie auch richtig ansprechen:</p>
 <p>Nachname: <span class="blank">__________</span>   Vorname: <span class="blank">__________</span></p>
-<p>Geb.-Datum: <span class="blank">__________</span>   Geschlecht: <span class="blank">__________</span>   Alter: <span class="blank">__________</span></p>
+<p>Geb.-Datum: <span class="blank">__________</span>   Geschlecht: <span class="blank">__________</span></p>
 <!-- Erklärung zu personal (de) hier ergänzen -->
 <div aria-label="Erklärung personal" class="explanation" data-label="Erklärung" data-placeholder="Erklärung …">Bitte tragen Sie Ihre Daten hier noch einmal selbst ein, um Fehler zu vermeiden.</div></section>
 <section class="question" data-question="1.6.1" id="de-q-1.6.1">
@@ -749,6 +748,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <div aria-label="Erklärung 1.6.2.2" class="explanation" data-label="Erklärung" data-placeholder="Erklärung …">Gemeint ist nicht der aktuelle Fall, der dazu geführt hat, dass wir Sie als Kontaktperson ins Gesundheitsamt eingeladen haben. Gefragt wird, ob Sie schon früher, vor diesem Fall, Kontakt zu einer Person hatten, die an Tuberkulose erkrankt war.</div></section>
 <section class="question" data-question="1.6.3" id="de-q-1.6.3">
 <h2><bdi class="number" dir="ltr">1.6.3</bdi> Ist Ihnen die erkrankte Person bekannt?</h2>
+<div class="choices" data-yesno="known"><span class="choice">☐ NEIN</span><span class="choice">☐ JA</span></div>
 <p>Falls bekannt, Kontaktumfang bis zur Diagnose bzw. bis zum Beginn von Schutzmaßnahmen (z. B. Mundschutz, Isolierung) – in der Regel die letzten 6 Wochen davor, zusammengezählt, nicht am Stück:</p>
 <div class="choices"><span class="choice">☐ &lt;8 h</span><span class="choice">☐ 8-40 h</span><span class="choice">☐ &gt;40 h</span><span class="choice">☐ intensiver Kurzkontakt</span></div>
 <!-- Erklärung zu 1.6.3 (de) hier ergänzen -->
@@ -810,6 +810,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <p>E-Mail-Adresse:</p><div aria-label="E-Mail-Adresse:" class="email-boxes" dir="ltr" role="group"><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
 <p>Zustimmung:</p>
 <div class="choices"><span class="choice">☐ Nein</span><span class="choice">☐ Ja, ich stimme zu</span></div>
+<p class="signature-line" data-sign="1">Unterschrift: <span class="blank">____________________</span></p>
 <!-- Erklärung zu consent (de) hier ergänzen -->
 <div aria-label="Erklärung consent" class="explanation" data-label="Erklärung" data-placeholder="Erklärung …">Wir schreiben Ihnen nur dann per E-Mail, wenn Sie zustimmen. Bitte tragen Sie Ihre E-Mail-Adresse in Druckbuchstaben ein, ein Zeichen pro Kästchen, und zwar so deutlich, dass sie jeder lesen kann. Warum? Wir müssen Ihre Handschrift abtippen. Schon ein falsch gelesener Buchstabe (zum Beispiel l und I, 0 und O, u und v, a und o) führt dazu, dass unsere E-Mail nicht bei Ihnen ankommt oder, schlimmer, bei einer fremden Person. Schreiben Sie das @-Zeichen und die Punkte besonders deutlich und verwenden Sie keine Schreibschrift.</div></section>
 <aside aria-labelledby="info-de" class="further-info"><h2 id="info-de">Weitere Informationen</h2><p class="external-notice">Die folgenden Links führen zu externen Internetseiten, die nicht in der Verantwortung des Gesundheitsamtes Hamburg-Mitte stehen.</p><ul><li><a href="https://explaintb.org/en/info" rel="noopener noreferrer" target="_blank">Informationen zur Tuberkulose <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/35" rel="noopener noreferrer" target="_blank">IGRA – Bluttest auf Tuberkulose-Infektion <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/36" rel="noopener noreferrer" target="_blank">LTBI – Latente Tuberkulose-Infektion <span class="external-label">· ExplainTB ↗</span></a></li></ul></aside>
@@ -823,7 +824,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <section class="question personal" data-question="personal" id="en-q-personal">
 <p>Please enter your details for verification so that we can address you correctly:</p>
 <p>Surname: <span class="blank">__________</span>   First name: <span class="blank">__________</span></p>
-<p>Date of birth: <span class="blank">__________</span>   Sex: <span class="blank">__________</span>   Age: <span class="blank">__________</span></p>
+<p>Date of birth: <span class="blank">__________</span>   Sex: <span class="blank">__________</span></p>
 <!-- Erklärung zu personal (en) hier ergänzen -->
 <div aria-label="Explanation personal" class="explanation" data-label="Explanation" data-placeholder="Explanation …">Please enter your details here yourself once more to avoid errors.</div></section>
 <section class="question" data-question="1.6.1" id="en-q-1.6.1">
@@ -850,6 +851,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <div aria-label="Explanation 1.6.2.2" class="explanation" data-label="Explanation" data-placeholder="Explanation …">This does not mean the current case that led us to invite you to the health department (Gesundheitsamt) as a contact person. The question is whether, before this case, you had contact with a person who had tuberculosis.</div></section>
 <section class="question" data-question="1.6.3" id="en-q-1.6.3">
 <h2><bdi class="number" dir="ltr">1.6.3</bdi> Do you know the person who has tuberculosis?</h2>
+<div class="choices" data-yesno="known"><span class="choice">☐ NO</span><span class="choice">☐ YES</span></div>
 <p>If known, total duration of contact up to the diagnosis or the start of protective measures (e.g. face mask, isolation) — usually the 6 weeks before that, added together, not necessarily continuous:</p>
 <div class="choices"><span class="choice">☐ &lt;8 h</span><span class="choice">☐ 8-40 h</span><span class="choice">☐ &gt;40 h</span><span class="choice">☐ Brief intensive contact</span></div>
 <!-- Erklärung zu 1.6.3 (en) hier ergänzen -->
@@ -911,6 +913,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <p>Email address:</p><div aria-label="Email address:" class="email-boxes" dir="ltr" role="group"><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
 <p>Consent:</p>
 <div class="choices"><span class="choice">☐ No</span><span class="choice">☐ Yes, I agree</span></div>
+<p class="signature-line" data-sign="1">Signature: <span class="blank">____________________</span></p>
 <!-- Erklärung zu consent (en) hier ergänzen -->
 <div aria-label="Explanation consent" class="explanation" data-label="Explanation" data-placeholder="Explanation …">We will only write to you by email if you agree. Please write your email address in block capitals, one character per box, and so clearly that anyone can read it. Why? We have to type up your handwriting. Even one misread letter (for example l and I, 0 and O, u and v, a and o) means our email will not reach you or, worse, will reach a stranger. Write the @ sign and the dots especially clearly and do not use joined-up handwriting.</div></section>
 <aside aria-labelledby="info-en" class="further-info"><h2 id="info-en">Further information</h2><p class="external-notice">The following links lead to external websites that are not the responsibility of the Hamburg-Mitte Public Health Department.</p><ul><li><a href="https://explaintb.org/en/info" rel="noopener noreferrer" target="_blank">Information about tuberculosis <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/35" rel="noopener noreferrer" target="_blank">IGRA – Blood test for TB infection <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/36" rel="noopener noreferrer" target="_blank">LTBI – Latent tuberculosis infection <span class="external-label">· ExplainTB ↗</span></a></li></ul></aside>
@@ -924,7 +927,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <section class="question personal" data-question="personal" id="fr-q-personal">
 <p>Veuillez renseigner vos coordonnées pour vérification afin que nous puissions nous adresser à vous correctement :</p>
 <p>Nom : <span class="blank">__________</span>   Prénom : <span class="blank">__________</span></p>
-<p>Date de naissance : <span class="blank">__________</span>   Sexe : <span class="blank">__________</span>   Âge : <span class="blank">__________</span></p>
+<p>Date de naissance : <span class="blank">__________</span>   Sexe : <span class="blank">__________</span></p>
 <!-- Erklärung zu personal (fr) hier ergänzen -->
 <div aria-label="Explication personal" class="explanation" data-label="Explication" data-placeholder="Explication …">Veuillez saisir vous-même vos données ici une nouvelle fois afin d’éviter les erreurs.</div></section>
 <section class="question" data-question="1.6.1" id="fr-q-1.6.1">
@@ -951,6 +954,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <div aria-label="Explication 1.6.2.2" class="explanation" data-label="Explication" data-placeholder="Explication …">Il ne s’agit pas du cas actuel, à l’origine de votre convocation au service de santé publique (Gesundheitsamt) en tant que personne de contact. La question est de savoir si, avant ce cas, vous avez déjà eu un contact avec une personne atteinte de tuberculose.</div></section>
 <section class="question" data-question="1.6.3" id="fr-q-1.6.3">
 <h2><bdi class="number" dir="ltr">1.6.3</bdi> Connaissez-vous la personne malade ?</h2>
+<div class="choices" data-yesno="known"><span class="choice">☐ NON</span><span class="choice">☐ OUI</span></div>
 <p>Si oui, durée totale du contact jusqu’au diagnostic ou jusqu’au début des mesures de protection (par ex. masque, isolement) – en général les 6 semaines précédentes, en additionnant les durées, pas nécessairement en continu :</p>
 <div class="choices"><span class="choice">☐ &lt;8 h</span><span class="choice">☐ 8-40 h</span><span class="choice">☐ &gt;40 h</span><span class="choice">☐ Contact bref et intense</span></div>
 <!-- Erklärung zu 1.6.3 (fr) hier ergänzen -->
@@ -1012,6 +1016,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <p>Adresse e-mail :</p><div aria-label="Adresse e-mail :" class="email-boxes" dir="ltr" role="group"><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
 <p>Consentement :</p>
 <div class="choices"><span class="choice">☐ Non</span><span class="choice">☐ Oui, j’accepte</span></div>
+<p class="signature-line" data-sign="1">Signature : <span class="blank">____________________</span></p>
 <!-- Erklärung zu consent (fr) hier ergänzen -->
 <div aria-label="Explication consent" class="explanation" data-label="Explication" data-placeholder="Explication …">Nous ne vous écrirons par e-mail que si vous êtes d’accord. Veuillez écrire votre adresse e-mail en lettres capitales, un caractère par case, et si lisiblement que tout le monde puisse la lire. Pourquoi ? Nous devons recopier votre écriture. Une seule lettre mal lue (par exemple l et I, 0 et O, u et v, a et o) suffit pour que notre e-mail ne vous parvienne pas ou, pire, arrive chez une personne inconnue. Écrivez le @ et les points particulièrement lisiblement et n’utilisez pas d’écriture cursive.</div></section>
 <aside aria-labelledby="info-fr" class="further-info"><h2 id="info-fr">Informations complémentaires</h2><p class="external-notice">Les liens suivants renvoient à des sites Internet externes qui ne relèvent pas de la responsabilité du service de santé publique de Hamburg-Mitte.</p><ul><li><a href="https://explaintb.org/en/info" rel="noopener noreferrer" target="_blank">Informations sur la tuberculose <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/35" rel="noopener noreferrer" target="_blank">IGRA – Test sanguin pour l’infection tuberculeuse <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/36" rel="noopener noreferrer" target="_blank">LTBI – Infection tuberculeuse latente <span class="external-label">· ExplainTB ↗</span></a></li></ul></aside>
@@ -1025,7 +1030,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <section class="question personal" data-question="personal" id="ru-q-personal">
 <p>Пожалуйста, укажите свои данные для проверки, чтобы мы могли правильно к Вам обращаться:</p>
 <p>Фамилия: <span class="blank">__________</span>   Имя: <span class="blank">__________</span></p>
-<p>Дата рождения: <span class="blank">__________</span>   Пол: <span class="blank">__________</span>   Возраст: <span class="blank">__________</span></p>
+<p>Дата рождения: <span class="blank">__________</span>   Пол: <span class="blank">__________</span></p>
 <!-- Erklärung zu personal (ru) hier ergänzen -->
 <div aria-label="Пояснение personal" class="explanation" data-label="Пояснение" data-placeholder="Пояснение …">Пожалуйста, ещё раз введите здесь свои данные самостоятельно, чтобы избежать ошибок.</div></section>
 <section class="question" data-question="1.6.1" id="ru-q-1.6.1">
@@ -1052,6 +1057,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <div aria-label="Пояснение 1.6.2.2" class="explanation" data-label="Пояснение" data-placeholder="Пояснение …">Имеется в виду не текущий случай, из-за которого мы пригласили Вас в орган здравоохранения (Gesundheitsamt) как контактное лицо. Спрашивается, был ли у Вас раньше, до этого случая, контакт с человеком, который болел туберкулёзом.</div></section>
 <section class="question" data-question="1.6.3" id="ru-q-1.6.3">
 <h2><bdi class="number" dir="ltr">1.6.3</bdi> Знаком ли Вам заболевший человек?</h2>
+<div class="choices" data-yesno="known"><span class="choice">☐ НЕТ</span><span class="choice">☐ ДА</span></div>
 <p>Если знаком, общая продолжительность контакта до постановки диагноза или начала защитных мер (например, маски, изоляции) — как правило, за предшествующие 6 недель, суммарно, не обязательно непрерывно:</p>
 <div class="choices"><span class="choice">☐ &lt;8 ч</span><span class="choice">☐ 8-40 ч</span><span class="choice">☐ &gt;40 ч</span><span class="choice">☐ Кратковременный интенсивный контакт</span></div>
 <!-- Erklärung zu 1.6.3 (ru) hier ergänzen -->
@@ -1113,6 +1119,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <p>Адрес электронной почты:</p><div aria-label="Адрес электронной почты:" class="email-boxes" dir="ltr" role="group"><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
 <p>Согласие:</p>
 <div class="choices"><span class="choice">☐ Нет</span><span class="choice">☐ Да, я согласен/согласна</span></div>
+<p class="signature-line" data-sign="1">Подпись: <span class="blank">____________________</span></p>
 <!-- Erklärung zu consent (ru) hier ergänzen -->
 <div aria-label="Пояснение consent" class="explanation" data-label="Пояснение" data-placeholder="Пояснение …">Мы напишем вам по электронной почте только в том случае, если вы согласны. Пожалуйста, напишите адрес электронной почты печатными буквами, по одному символу в каждую клетку, и так разборчиво, чтобы любой мог его прочитать. Почему? Нам приходится перепечатывать написанное вами от руки. Достаточно одной неверно прочитанной буквы (например, l и I, 0 и O, u и v, a и o), чтобы наше письмо не дошло до вас или, что ещё хуже, попало к постороннему человеку. Знак @ и точки пишите особенно чётко и не используйте слитное рукописное письмо.</div></section>
 <aside aria-labelledby="info-ru" class="further-info"><h2 id="info-ru">Дополнительная информация</h2><p class="external-notice">Следующие ссылки ведут на внешние сайты, за которые Управление здравоохранения Hamburg-Mitte не несёт ответственности.</p><ul><li><a href="https://explaintb.org/en/info" rel="noopener noreferrer" target="_blank">Информация о туберкулёзе <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/35" rel="noopener noreferrer" target="_blank">IGRA – Анализ крови на туберкулёзную инфекцию <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/36" rel="noopener noreferrer" target="_blank">LTBI – Латентная туберкулёзная инфекция <span class="external-label">· ExplainTB ↗</span></a></li></ul></aside>
@@ -1126,7 +1133,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <section class="question personal" data-question="personal" id="pl-q-personal">
 <p>Prosimy wpisać swoje dane do weryfikacji, abyśmy mogli prawidłowo się do Pani/Pana zwracać:</p>
 <p>Nazwisko: <span class="blank">__________</span>   Imię: <span class="blank">__________</span></p>
-<p>Data urodzenia: <span class="blank">__________</span>   Płeć: <span class="blank">__________</span>   Wiek: <span class="blank">__________</span></p>
+<p>Data urodzenia: <span class="blank">__________</span>   Płeć: <span class="blank">__________</span></p>
 <!-- Erklärung zu personal (pl) hier ergänzen -->
 <div aria-label="Wyjaśnienie personal" class="explanation" data-label="Wyjaśnienie" data-placeholder="Wyjaśnienie …">Prosimy o ponowne samodzielne wpisanie tutaj swoich danych, aby uniknąć błędów.</div></section>
 <section class="question" data-question="1.6.1" id="pl-q-1.6.1">
@@ -1153,6 +1160,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <div aria-label="Wyjaśnienie 1.6.2.2" class="explanation" data-label="Wyjaśnienie" data-placeholder="Wyjaśnienie …">Nie chodzi o obecny przypadek, w związku z którym zaprosiliśmy Panią/Pana jako osobę z kontaktu do urzędu zdrowia (Gesundheitsamt). Pytamy, czy wcześniej, przed tym przypadkiem, doszło do kontaktu z osobą chorą na gruźlicę.</div></section>
 <section class="question" data-question="1.6.3" id="pl-q-1.6.3">
 <h2><bdi class="number" dir="ltr">1.6.3</bdi> Czy zna Pani/Pan osobę chorą?</h2>
+<div class="choices" data-yesno="known"><span class="choice">☐ NIE</span><span class="choice">☐ TAK</span></div>
 <p>Jeśli tak, łączny czas kontaktu do momentu rozpoznania lub rozpoczęcia środków ochronnych (np. maseczki, izolacji) — zwykle w ciągu poprzedzających 6 tygodni, zsumowany, niekoniecznie bez przerw:</p>
 <div class="choices"><span class="choice">☐ &lt;8 godz.</span><span class="choice">☐ 8-40 godz.</span><span class="choice">☐ &gt;40 godz.</span><span class="choice">☐ Krótki intensywny kontakt</span></div>
 <!-- Erklärung zu 1.6.3 (pl) hier ergänzen -->
@@ -1214,6 +1222,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <p>Adres e-mail:</p><div aria-label="Adres e-mail:" class="email-boxes" dir="ltr" role="group"><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
 <p>Zgoda:</p>
 <div class="choices"><span class="choice">☐ Nie</span><span class="choice">☐ Tak, wyrażam zgodę</span></div>
+<p class="signature-line" data-sign="1">Podpis: <span class="blank">____________________</span></p>
 <!-- Erklärung zu consent (pl) hier ergänzen -->
 <div aria-label="Wyjaśnienie consent" class="explanation" data-label="Wyjaśnienie" data-placeholder="Wyjaśnienie …">Napiszemy do Państwa e-mailem tylko wtedy, gdy wyrażą Państwo zgodę. Proszę wpisać adres e-mail drukowanymi literami, po jednym znaku w każdym kwadracie, i tak czytelnie, aby każdy mógł go odczytać. Dlaczego? Musimy przepisać Państwa pismo odręczne. Wystarczy jedna źle odczytana litera (na przykład l i I, 0 i O, u i v, a i o), aby nasz e-mail do Państwa nie dotarł lub, co gorsza, trafił do obcej osoby. Znak @ i kropki proszę pisać szczególnie wyraźnie i nie używać pisma ciągłego.</div></section>
 <aside aria-labelledby="info-pl" class="further-info"><h2 id="info-pl">Dodatkowe informacje</h2><p class="external-notice">Poniższe linki prowadzą do zewnętrznych stron internetowych, za które Urząd Zdrowia Hamburg-Mitte nie ponosi odpowiedzialności.</p><ul><li><a href="https://explaintb.org/en/info" rel="noopener noreferrer" target="_blank">Informacje o gruźlicy <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/35" rel="noopener noreferrer" target="_blank">IGRA – Badanie krwi w kierunku zakażenia prątkiem gruźlicy <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/36" rel="noopener noreferrer" target="_blank">LTBI – Utajone zakażenie prątkiem gruźlicy <span class="external-label">· ExplainTB ↗</span></a></li></ul></aside>
@@ -1227,7 +1236,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <section class="question personal" data-question="personal" id="tr-q-personal">
 <p>Size doğru şekilde hitap edebilmemiz için lütfen bilgilerinizi kontrol amacıyla girin:</p>
 <p>Soyadı: <span class="blank">__________</span>   Adı: <span class="blank">__________</span></p>
-<p>Doğum tarihi: <span class="blank">__________</span>   Cinsiyet: <span class="blank">__________</span>   Yaş: <span class="blank">__________</span></p>
+<p>Doğum tarihi: <span class="blank">__________</span>   Cinsiyet: <span class="blank">__________</span></p>
 <!-- Erklärung zu personal (tr) hier ergänzen -->
 <div aria-label="Açıklama personal" class="explanation" data-label="Açıklama" data-placeholder="Açıklama …">Hataları önlemek için lütfen bilgilerinizi burada bir kez daha kendiniz yazın.</div></section>
 <section class="question" data-question="1.6.1" id="tr-q-1.6.1">
@@ -1254,6 +1263,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <div aria-label="Açıklama 1.6.2.2" class="explanation" data-label="Açıklama" data-placeholder="Açıklama …">Sizi temas kişisi olarak sağlık müdürlüğüne (Gesundheitsamt) davet etmemize neden olan mevcut vaka kastedilmemektedir. Sorulan, bu vakadan önce tüberküloz hastası olan biriyle temasınızın olup olmadığıdır.</div></section>
 <section class="question" data-question="1.6.3" id="tr-q-1.6.3">
 <h2><bdi class="number" dir="ltr">1.6.3</bdi> Hasta olan kişiyi tanıyor musunuz?</h2>
+<div class="choices" data-yesno="known"><span class="choice">☐ HAYIR</span><span class="choice">☐ EVET</span></div>
 <p>Tanıyorsanız, tanı konana veya koruyucu önlemlerin (örneğin maske, izolasyon) başladığı tarihe kadarki toplam temas süresi — genellikle bundan önceki son 6 hafta, sürelerin toplamı, kesintisiz olması gerekmez:</p>
 <div class="choices"><span class="choice">☐ &lt;8 saat</span><span class="choice">☐ 8-40 saat</span><span class="choice">☐ &gt;40 saat</span><span class="choice">☐ Kısa süreli yoğun temas</span></div>
 <!-- Erklärung zu 1.6.3 (tr) hier ergänzen -->
@@ -1315,6 +1325,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <p>E-posta adresi:</p><div aria-label="E-posta adresi:" class="email-boxes" dir="ltr" role="group"><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
 <p>Onay:</p>
 <div class="choices"><span class="choice">☐ Hayır</span><span class="choice">☐ Evet, onaylıyorum</span></div>
+<p class="signature-line" data-sign="1">İmza: <span class="blank">____________________</span></p>
 <!-- Erklärung zu consent (tr) hier ergänzen -->
 <div aria-label="Açıklama consent" class="explanation" data-label="Açıklama" data-placeholder="Açıklama …">Size yalnızca onay verirseniz e-posta yazacağız. Lütfen e-posta adresinizi büyük harflerle, her kutuya bir karakter gelecek şekilde ve herkesin okuyabileceği kadar net yazın. Neden? El yazınızı bilgisayara geçirmemiz gerekiyor. Yanlış okunan tek bir harf bile (örneğin l ile I, 0 ile O, u ile v, a ile o) e-postamızın size ulaşmamasına ya da daha kötüsü, yabancı bir kişiye ulaşmasına neden olur. @ işaretini ve noktaları özellikle net yazın ve bitişik el yazısı kullanmayın.</div></section>
 <aside aria-labelledby="info-tr" class="further-info"><h2 id="info-tr">Daha fazla bilgi</h2><p class="external-notice">Aşağıdaki bağlantılar, Hamburg-Mitte Sağlık Dairesinin sorumluluğunda olmayan harici internet sitelerine yönlendirir.</p><ul><li><a href="https://explaintb.org/en/info" rel="noopener noreferrer" target="_blank">Tüberküloz hakkında bilgi <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/35" rel="noopener noreferrer" target="_blank">IGRA – Tüberküloz enfeksiyonu için kan testi <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/36" rel="noopener noreferrer" target="_blank">LTBI – Latent tüberküloz enfeksiyonu <span class="external-label">· ExplainTB ↗</span></a></li></ul></aside>
@@ -1328,7 +1339,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <section class="question personal" data-question="personal" id="fa-q-personal">
 <p>لطفاً برای بررسی، مشخصات خود را وارد کنید تا بتوانیم شما را به‌درستی خطاب کنیم:</p>
 <p>نام خانوادگی: <span class="blank">__________</span>   نام: <span class="blank">__________</span></p>
-<p>تاریخ تولد: <span class="blank">__________</span>   جنسیت: <span class="blank">__________</span>   سن: <span class="blank">__________</span></p>
+<p>تاریخ تولد: <span class="blank">__________</span>   جنسیت: <span class="blank">__________</span></p>
 <!-- Erklärung zu personal (fa) hier ergänzen -->
 <div aria-label="توضیح personal" class="explanation" data-label="توضیح" data-placeholder="توضیح …">لطفاً برای جلوگیری از اشتباه، اطلاعات خود را یک بار دیگر در اینجا خودتان وارد کنید.</div></section>
 <section class="question" data-question="1.6.1" id="fa-q-1.6.1">
@@ -1355,6 +1366,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <div aria-label="توضیح 1.6.2.2" class="explanation" data-label="توضیح" data-placeholder="توضیح …">منظور مورد فعلی نیست که به‌خاطر آن شما را به‌عنوان فرد در تماس به اداره بهداشت (Gesundheitsamt) دعوت کرده‌ایم. سؤال این است که آیا پیش از این مورد نیز با فردی که به سل مبتلا بوده تماس داشته‌اید.</div></section>
 <section class="question" data-question="1.6.3" id="fa-q-1.6.3">
 <h2><bdi class="number" dir="ltr">1.6.3</bdi> آیا فرد بیمار را می‌شناسید؟</h2>
+<div class="choices" data-yesno="known"><span class="choice">☐ خیر</span><span class="choice">☐ بله</span></div>
 <p>اگر می‌شناسید، مجموع مدت تماس تا زمان تشخیص یا آغاز اقدامات حفاظتی (مانند ماسک، ایزوله‌سازی) — معمولاً ۶ هفتهٔ پیش از آن، مجموع زمان‌ها، نه لزوماً به‌طور پیوسته:</p>
 <div class="choices"><span class="choice">☐ کمتر از ۸ ساعت</span><span class="choice">☐ ۸ تا ۴۰ ساعت</span><span class="choice">☐ بیش از ۴۰ ساعت</span><span class="choice">☐ تماس کوتاه و نزدیک و شدید</span></div>
 <!-- Erklärung zu 1.6.3 (fa) hier ergänzen -->
@@ -1416,6 +1428,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <p>نشانی ایمیل:</p><div aria-label="نشانی ایمیل:" class="email-boxes" dir="ltr" role="group"><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
 <p>رضایت:</p>
 <div class="choices"><span class="choice">☐ خیر</span><span class="choice">☐ بله، موافقم</span></div>
+<p class="signature-line" data-sign="1">امضا: <span class="blank">____________________</span></p>
 <!-- Erklärung zu consent (fa) hier ergänzen -->
 <div aria-label="توضیح consent" class="explanation" data-label="توضیح" data-placeholder="توضیح …">فقط در صورتی که موافقت کنید برایتان ایمیل می‌فرستیم. لطفاً نشانی ایمیل خود را با حروف چاپی، هر حرف در یک خانه، و چنان خوانا بنویسید که همه بتوانند آن را بخوانند. چرا؟ ما باید دست‌خط شما را تایپ کنیم. حتی یک حرف اشتباه خوانده‌شده (مثلاً l و I، 0 و O، u و v، a و o) باعث می‌شود ایمیل ما به شما نرسد یا، بدتر از آن، به دست فردی غریبه برسد. علامت @ و نقطه‌ها را به‌ویژه خوانا بنویسید و از خط دست‌نویس پیوسته استفاده نکنید.</div></section>
 <aside aria-labelledby="info-fa" class="further-info"><h2 id="info-fa">اطلاعات بیشتر</h2><p class="external-notice">پیوندهای زیر به وب‌سایت‌های خارجی هدایت می‌کنند که اداره بهداشت Hamburg-Mitte مسئولیتی در قبال آن‌ها ندارد.</p><ul><li><a href="https://explaintb.org/en/info" rel="noopener noreferrer" target="_blank">اطلاعات درباره سل <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/35" rel="noopener noreferrer" target="_blank">IGRA – آزمایش خون برای عفونت سل <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/36" rel="noopener noreferrer" target="_blank">LTBI – عفونت نهفته سل <span class="external-label">· ExplainTB ↗</span></a></li></ul></aside>
@@ -1429,7 +1442,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <section class="question personal" data-question="personal" id="ar-q-personal">
 <p>يرجى إدخال بياناتك للتحقق منها حتى نتمكن من مخاطبتك بشكل صحيح:</p>
 <p>اسم العائلة: <span class="blank">__________</span>   الاسم الأول: <span class="blank">__________</span></p>
-<p>تاريخ الميلاد: <span class="blank">__________</span>   الجنس: <span class="blank">__________</span>   العمر: <span class="blank">__________</span></p>
+<p>تاريخ الميلاد: <span class="blank">__________</span>   الجنس: <span class="blank">__________</span></p>
 <!-- Erklärung zu personal (ar) hier ergänzen -->
 <div aria-label="توضيح personal" class="explanation" data-label="توضيح" data-placeholder="توضيح …">يرجى إدخال بياناتك هنا مرة أخرى بنفسك لتجنب الأخطاء.</div></section>
 <section class="question" data-question="1.6.1" id="ar-q-1.6.1">
@@ -1456,6 +1469,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <div aria-label="توضيح 1.6.2.2" class="explanation" data-label="توضيح" data-placeholder="توضيح …">لا يُقصد الحالة الحالية التي دعتنا إلى دعوتك إلى دائرة الصحة (Gesundheitsamt) بصفتك شخصاً مخالطاً. والسؤال هو: هل سبق أن خالطت شخصاً مصاباً بالسل قبل هذه الحالة؟</div></section>
 <section class="question" data-question="1.6.3" id="ar-q-1.6.3">
 <h2><bdi class="number" dir="ltr">1.6.3</bdi> هل تعرف الشخص المصاب؟</h2>
+<div class="choices" data-yesno="known"><span class="choice">☐ لا</span><span class="choice">☐ نعم</span></div>
 <p>إذا كنت تعرفه، المدة الإجمالية للمخالطة حتى تشخيص المرض أو بدء إجراءات الوقاية (مثل الكمامة أو العزل) — عادة الأسابيع الستة السابقة لذلك، بجمع الفترات وليس بالضرورة بصورة متواصلة:</p>
 <div class="choices"><span class="choice">☐ أقل من 8 ساعات</span><span class="choice">☐ من 8 إلى 40 ساعة</span><span class="choice">☐ أكثر من 40 ساعة</span><span class="choice">☐ مخالطة قصيرة ومكثفة</span></div>
 <!-- Erklärung zu 1.6.3 (ar) hier ergänzen -->
@@ -1517,6 +1531,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <p>عنوان البريد الإلكتروني:</p><div aria-label="عنوان البريد الإلكتروني:" class="email-boxes" dir="ltr" role="group"><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
 <p>الموافقة:</p>
 <div class="choices"><span class="choice">☐ لا</span><span class="choice">☐ نعم، أوافق</span></div>
+<p class="signature-line" data-sign="1">التوقيع: <span class="blank">____________________</span></p>
 <!-- Erklärung zu consent (ar) hier ergänzen -->
 <div aria-label="توضيح consent" class="explanation" data-label="توضيح" data-placeholder="توضيح …">لن نراسلك عبر البريد الإلكتروني إلا إذا وافقت. يرجى كتابة عنوان بريدك الإلكتروني بحروف منفصلة واضحة، حرف واحد في كل مربع، وبخط مقروء بحيث يستطيع أي شخص قراءته. لماذا؟ لأننا نضطر إلى إعادة كتابة خطك اليدوي. يكفي حرف واحد يُقرأ خطأً (مثل l وI، و0 وO، وu وv، وa وo) كي لا تصلك رسالتنا، أو تصل، وهو الأسوأ، إلى شخص غريب. اكتب علامة @ والنقاط بوضوح خاص ولا تستخدم الخط المتصل.</div></section>
 <aside aria-labelledby="info-ar" class="further-info"><h2 id="info-ar">مزيد من المعلومات</h2><p class="external-notice">تؤدي الروابط التالية إلى مواقع إلكترونية خارجية لا تقع ضمن مسؤولية دائرة الصحة في Hamburg-Mitte.</p><ul><li><a href="https://explaintb.org/en/info" rel="noopener noreferrer" target="_blank">معلومات عن السل <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/35" rel="noopener noreferrer" target="_blank">IGRA – فحص الدم للكشف عن عدوى السل <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/36" rel="noopener noreferrer" target="_blank">LTBI – عدوى السل الكامنة <span class="external-label">· ExplainTB ↗</span></a></li></ul></aside>
@@ -1530,7 +1545,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <section class="question personal" data-question="personal" id="ro-q-personal">
 <p>Vă rugăm să completați datele pentru verificare, astfel încât să ne putem adresa corect:</p>
 <p>Nume de familie: <span class="blank">__________</span>   Prenume: <span class="blank">__________</span></p>
-<p>Data nașterii: <span class="blank">__________</span>   Sex: <span class="blank">__________</span>   Vârsta: <span class="blank">__________</span></p>
+<p>Data nașterii: <span class="blank">__________</span>   Sex: <span class="blank">__________</span></p>
 <!-- Erklärung zu personal (ro) hier ergänzen -->
 <div aria-label="Explicație personal" class="explanation" data-label="Explicație" data-placeholder="Explicație …">Vă rugăm să introduceți din nou aici, personal, datele dumneavoastră, pentru a evita greșelile.</div></section>
 <section class="question" data-question="1.6.1" id="ro-q-1.6.1">
@@ -1557,6 +1572,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <div aria-label="Explicație 1.6.2.2" class="explanation" data-label="Explicație" data-placeholder="Explicație …">Nu se are în vedere cazul actual, din cauza căruia v-am invitat la direcția de sănătate publică (Gesundheitsamt) ca persoană de contact. Se întreabă dacă ați avut, înainte de acest caz, contact cu o persoană care a avut tuberculoză.</div></section>
 <section class="question" data-question="1.6.3" id="ro-q-1.6.3">
 <h2><bdi class="number" dir="ltr">1.6.3</bdi> Cunoașteți persoana bolnavă?</h2>
+<div class="choices" data-yesno="known"><span class="choice">☐ NU</span><span class="choice">☐ DA</span></div>
 <p>Dacă da, durata totală a contactului până la diagnostic sau până la începutul măsurilor de protecție (de ex. mască, izolare) — de regulă cele 6 săptămâni anterioare, însumată, nu neapărat continuă:</p>
 <div class="choices"><span class="choice">☐ &lt;8 ore</span><span class="choice">☐ 8-40 ore</span><span class="choice">☐ &gt;40 ore</span><span class="choice">☐ Contact scurt și intens</span></div>
 <!-- Erklärung zu 1.6.3 (ro) hier ergänzen -->
@@ -1618,6 +1634,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <p>Adresa de e-mail:</p><div aria-label="Adresa de e-mail:" class="email-boxes" dir="ltr" role="group"><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
 <p>Consimțământ:</p>
 <div class="choices"><span class="choice">☐ Nu</span><span class="choice">☐ Da, sunt de acord</span></div>
+<p class="signature-line" data-sign="1">Semnătura: <span class="blank">____________________</span></p>
 <!-- Erklärung zu consent (ro) hier ergänzen -->
 <div aria-label="Explicație consent" class="explanation" data-label="Explicație" data-placeholder="Explicație …">Vă vom scrie prin e-mail numai dacă sunteți de acord. Vă rugăm să scrieți adresa de e-mail cu litere de tipar, câte un caracter în fiecare căsuță, și atât de lizibil încât oricine să o poată citi. De ce? Trebuie să transcriem scrisul dumneavoastră de mână. Chiar și o singură literă citită greșit (de exemplu l și I, 0 și O, u și v, a și o) face ca e-mailul nostru să nu ajungă la dumneavoastră sau, mai rău, să ajungă la o persoană străină. Scrieți semnul @ și punctele deosebit de clar și nu folosiți scrisul de mână legat.</div></section>
 <aside aria-labelledby="info-ro" class="further-info"><h2 id="info-ro">Informații suplimentare</h2><p class="external-notice">Linkurile de mai jos duc la site-uri externe care nu se află în responsabilitatea Departamentului de Sănătate Publică Hamburg-Mitte.</p><ul><li><a href="https://explaintb.org/en/info" rel="noopener noreferrer" target="_blank">Informații despre tuberculoză <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/35" rel="noopener noreferrer" target="_blank">IGRA – Test de sânge pentru infecția tuberculoasă <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/36" rel="noopener noreferrer" target="_blank">LTBI – Infecție tuberculoasă latentă <span class="external-label">· ExplainTB ↗</span></a></li></ul></aside>
@@ -1631,7 +1648,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <section class="question personal" data-question="personal" id="es-q-personal">
 <p>Introduzca sus datos para verificarlos, de modo que podamos dirigirnos a usted correctamente:</p>
 <p>Apellidos: <span class="blank">__________</span>   Nombre: <span class="blank">__________</span></p>
-<p>Fecha de nacimiento: <span class="blank">__________</span>   Sexo: <span class="blank">__________</span>   Edad: <span class="blank">__________</span></p>
+<p>Fecha de nacimiento: <span class="blank">__________</span>   Sexo: <span class="blank">__________</span></p>
 <!-- Erklärung zu personal (es) hier ergänzen -->
 <div aria-label="Explicación personal" class="explanation" data-label="Explicación" data-placeholder="Explicación …">Por favor, vuelva a escribir usted mismo sus datos aquí para evitar errores.</div></section>
 <section class="question" data-question="1.6.1" id="es-q-1.6.1">
@@ -1658,6 +1675,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <div aria-label="Explicación 1.6.2.2" class="explanation" data-label="Explicación" data-placeholder="Explicación …">No se refiere al caso actual, por el que le hemos invitado al servicio de salud pública (Gesundheitsamt) como persona de contacto. Se pregunta si antes de este caso ya tuvo contacto con una persona que había tenido tuberculosis.</div></section>
 <section class="question" data-question="1.6.3" id="es-q-1.6.3">
 <h2><bdi class="number" dir="ltr">1.6.3</bdi> ¿Conoce a la persona enferma?</h2>
+<div class="choices" data-yesno="known"><span class="choice">☐ NO</span><span class="choice">☐ SÍ</span></div>
 <p>Si la conoce, duración total del contacto hasta el diagnóstico o el inicio de las medidas de protección (por ejemplo, mascarilla, aislamiento) — por lo general, las 6 semanas anteriores, sumando los períodos, no necesariamente de forma continua:</p>
 <div class="choices"><span class="choice">☐ &lt;8 h</span><span class="choice">☐ 8-40 h</span><span class="choice">☐ &gt;40 h</span><span class="choice">☐ Contacto breve e intenso</span></div>
 <!-- Erklärung zu 1.6.3 (es) hier ergänzen -->
@@ -1719,6 +1737,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <p>Dirección de correo electrónico:</p><div aria-label="Dirección de correo electrónico:" class="email-boxes" dir="ltr" role="group"><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
 <p>Consentimiento:</p>
 <div class="choices"><span class="choice">☐ No</span><span class="choice">☐ Sí, acepto</span></div>
+<p class="signature-line" data-sign="1">Firma: <span class="blank">____________________</span></p>
 <!-- Erklärung zu consent (es) hier ergänzen -->
 <div aria-label="Explicación consent" class="explanation" data-label="Explicación" data-placeholder="Explicación …">Solo le escribiremos por correo electrónico si está de acuerdo. Escriba su dirección de correo electrónico en letras mayúsculas de imprenta, un carácter por casilla, y con tanta claridad que cualquiera pueda leerla. ¿Por qué? Tenemos que pasar su letra a mano a ordenador. Basta una sola letra mal leída (por ejemplo l e I, 0 y O, u y v, a y o) para que nuestro mensaje no le llegue o, peor aún, llegue a una persona desconocida. Escriba el signo @ y los puntos con especial claridad y no use letra cursiva enlazada.</div></section>
 <aside aria-labelledby="info-es" class="further-info"><h2 id="info-es">Más información</h2><p class="external-notice">Los siguientes enlaces llevan a sitios web externos que no son responsabilidad del Departamento de Salud Pública de Hamburg-Mitte.</p><ul><li><a href="https://explaintb.org/en/info" rel="noopener noreferrer" target="_blank">Información sobre la tuberculosis <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/35" rel="noopener noreferrer" target="_blank">IGRA – Análisis de sangre para la infección tuberculosa <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/36" rel="noopener noreferrer" target="_blank">LTBI – Infección tuberculosa latente <span class="external-label">· ExplainTB ↗</span></a></li></ul></aside>
@@ -1732,7 +1751,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <section class="question personal" data-question="personal" id="hi-q-personal">
 <p>कृपया सत्यापन के लिए अपना विवरण भरें ताकि हम आपको सही तरह से संबोधित कर सकें:</p>
 <p>उपनाम: <span class="blank">__________</span>   नाम: <span class="blank">__________</span></p>
-<p>जन्म तिथि: <span class="blank">__________</span>   लिंग: <span class="blank">__________</span>   आयु: <span class="blank">__________</span></p>
+<p>जन्म तिथि: <span class="blank">__________</span>   लिंग: <span class="blank">__________</span></p>
 <!-- Erklärung zu personal (hi) hier ergänzen -->
 <div aria-label="स्पष्टीकरण personal" class="explanation" data-label="स्पष्टीकरण" data-placeholder="स्पष्टीकरण …">गलतियों से बचने के लिए कृपया अपनी जानकारी यहाँ एक बार फिर स्वयं भरें।</div></section>
 <section class="question" data-question="1.6.1" id="hi-q-1.6.1">
@@ -1759,6 +1778,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <div aria-label="स्पष्टीकरण 1.6.2.2" class="explanation" data-label="स्पष्टीकरण" data-placeholder="स्पष्टीकरण …">यहाँ उस मौजूदा मामले की बात नहीं है, जिसके कारण हमने आपको संपर्क व्यक्ति के रूप में स्वास्थ्य विभाग (Gesundheitsamt) में बुलाया है। पूछा यह जा रहा है कि क्या इस मामले से पहले भी आप कभी तपेदिक के किसी रोगी के संपर्क में आए थे।</div></section>
 <section class="question" data-question="1.6.3" id="hi-q-1.6.3">
 <h2><bdi class="number" dir="ltr">1.6.3</bdi> क्या आप बीमार व्यक्ति को जानते हैं?</h2>
+<div class="choices" data-yesno="known"><span class="choice">☐ नहीं</span><span class="choice">☐ हाँ</span></div>
 <p>यदि जानते हैं, तो निदान होने या सुरक्षा उपायों (जैसे मास्क, आइसोलेशन) शुरू होने तक की संपर्क की कुल अवधि — आमतौर पर उससे पहले के 6 हफ़्ते, सभी अवधियों को जोड़कर, लगातार होना आवश्यक नहीं:</p>
 <div class="choices"><span class="choice">☐ 8 घंटे से कम</span><span class="choice">☐ 8-40 घंटे</span><span class="choice">☐ 40 घंटे से अधिक</span><span class="choice">☐ कम समय का गहन संपर्क</span></div>
 <!-- Erklärung zu 1.6.3 (hi) hier ergänzen -->
@@ -1820,6 +1840,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <p>ईमेल पता:</p><div aria-label="ईमेल पता:" class="email-boxes" dir="ltr" role="group"><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
 <p>सहमति:</p>
 <div class="choices"><span class="choice">☐ नहीं</span><span class="choice">☐ हाँ, मैं सहमत हूँ</span></div>
+<p class="signature-line" data-sign="1">हस्ताक्षर: <span class="blank">____________________</span></p>
 <!-- Erklärung zu consent (hi) hier ergänzen -->
 <div aria-label="स्पष्टीकरण consent" class="explanation" data-label="स्पष्टीकरण" data-placeholder="स्पष्टीकरण …">हम आपको ईमेल तभी भेजेंगे जब आप सहमत होंगे। कृपया अपना ईमेल पता बड़े छपे अक्षरों में, हर खाने में एक अक्षर, और इतना साफ़ लिखें कि कोई भी पढ़ सके। क्यों? हमें आपकी हस्तलिखित लिखावट को टाइप करना पड़ता है। एक भी ग़लत पढ़ा गया अक्षर (जैसे l और I, 0 और O, u और v, a और o) हो तो हमारा ईमेल आप तक नहीं पहुँचेगा या, इससे भी बुरा, किसी अनजान व्यक्ति तक पहुँच जाएगा। @ का चिह्न और बिंदु विशेष रूप से साफ़ लिखें और जुड़ी हुई लिखावट का उपयोग न करें।</div></section>
 <aside aria-labelledby="info-hi" class="further-info"><h2 id="info-hi">अधिक जानकारी</h2><p class="external-notice">नीचे दिए गए लिंक बाहरी वेबसाइटों पर ले जाते हैं, जिनकी ज़िम्मेदारी Hamburg-Mitte के सार्वजनिक स्वास्थ्य विभाग की नहीं है।</p><ul><li><a href="https://explaintb.org/en/info" rel="noopener noreferrer" target="_blank">तपेदिक के बारे में जानकारी <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/35" rel="noopener noreferrer" target="_blank">IGRA – तपेदिक संक्रमण के लिए रक्त जाँच <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/36" rel="noopener noreferrer" target="_blank">LTBI – सुप्त तपेदिक संक्रमण <span class="external-label">· ExplainTB ↗</span></a></li></ul></aside>
@@ -1833,7 +1854,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <section class="question personal" data-question="personal" id="bg-q-personal">
 <p>Моля, въведете данните си за проверка, за да можем да се обръщаме правилно към Вас:</p>
 <p>Фамилия: <span class="blank">__________</span>   Име: <span class="blank">__________</span></p>
-<p>Дата на раждане: <span class="blank">__________</span>   Пол: <span class="blank">__________</span>   Възраст: <span class="blank">__________</span></p>
+<p>Дата на раждане: <span class="blank">__________</span>   Пол: <span class="blank">__________</span></p>
 <!-- Erklärung zu personal (bg) hier ergänzen -->
 <div aria-label="Пояснение personal" class="explanation" data-label="Пояснение" data-placeholder="Пояснение …">Моля, въведете данните си тук още веднъж сами, за да се избегнат грешки.</div></section>
 <section class="question" data-question="1.6.1" id="bg-q-1.6.1">
@@ -1860,6 +1881,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <div aria-label="Пояснение 1.6.2.2" class="explanation" data-label="Пояснение" data-placeholder="Пояснение …">Не се има предвид настоящият случай, заради който Ви поканихме в здравната служба (Gesundheitsamt) като контактно лице. Пита се дали преди този случай сте имали контакт с човек, болен от туберкулоза.</div></section>
 <section class="question" data-question="1.6.3" id="bg-q-1.6.3">
 <h2><bdi class="number" dir="ltr">1.6.3</bdi> Познавате ли заболелия човек?</h2>
+<div class="choices" data-yesno="known"><span class="choice">☐ НЕ</span><span class="choice">☐ ДА</span></div>
 <p>Ако го познавате, обща продължителност на контакта до поставянето на диагнозата или до началото на защитните мерки (напр. маска, изолация) — обикновено предходните 6 седмици, сумарно, не непременно непрекъснато:</p>
 <div class="choices"><span class="choice">☐ &lt;8 ч</span><span class="choice">☐ 8-40 ч</span><span class="choice">☐ &gt;40 ч</span><span class="choice">☐ Кратък интензивен контакт</span></div>
 <!-- Erklärung zu 1.6.3 (bg) hier ergänzen -->
@@ -1921,6 +1943,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <p>Електронен адрес:</p><div aria-label="Електронен адрес:" class="email-boxes" dir="ltr" role="group"><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
 <p>Съгласие:</p>
 <div class="choices"><span class="choice">☐ Не</span><span class="choice">☐ Да, съгласен/съгласна съм</span></div>
+<p class="signature-line" data-sign="1">Подпис: <span class="blank">____________________</span></p>
 <!-- Erklärung zu consent (bg) hier ergänzen -->
 <div aria-label="Пояснение consent" class="explanation" data-label="Пояснение" data-placeholder="Пояснение …">Ще ви пишем по имейл само ако сте съгласни. Моля, напишете имейл адреса си с печатни букви, по един знак във всяко квадратче, и толкова четливо, че всеки да може да го прочете. Защо? Налага се да преписваме ръкописа ви. Дори една погрешно прочетена буква (например l и I, 0 и O, u и v, a и o) е достатъчна, за да не получите нашия имейл или, още по-лошо, той да стигне до непознат човек. Пишете знака @ и точките особено ясно и не използвайте слят ръкописен почерк.</div></section>
 <aside aria-labelledby="info-bg" class="further-info"><h2 id="info-bg">Допълнителна информация</h2><p class="external-notice">Следващите връзки водят към външни уебсайтове, за които Службата по обществено здраве Hamburg-Mitte не носи отговорност.</p><ul><li><a href="https://explaintb.org/en/info" rel="noopener noreferrer" target="_blank">Информация за туберкулозата <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/35" rel="noopener noreferrer" target="_blank">IGRA – Кръвен тест за туберкулозна инфекция <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/36" rel="noopener noreferrer" target="_blank">LTBI – Латентна туберкулозна инфекция <span class="external-label">· ExplainTB ↗</span></a></li></ul></aside>
@@ -1934,7 +1957,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <section class="question personal" data-question="personal" id="so-q-personal">
 <p>Fadlan geli xogtaada si loo hubiyo, si aan si sax ah kuugu yeerno:</p>
 <p>Magaca qoyska: <span class="blank">__________</span>   Magaca koowaad: <span class="blank">__________</span></p>
-<p>Taariikhda dhalashada: <span class="blank">__________</span>   Jinsiga: <span class="blank">__________</span>   Da’da: <span class="blank">__________</span></p>
+<p>Taariikhda dhalashada: <span class="blank">__________</span>   Jinsiga: <span class="blank">__________</span></p>
 <!-- Erklärung zu personal (so) hier ergänzen -->
 <div aria-label="Sharaxaad personal" class="explanation" data-label="Sharaxaad" data-placeholder="Sharaxaad …">Fadlan halkan mar kale adigu ku qor xogtaada si looga fogaado khaladaadka.</div></section>
 <section class="question" data-question="1.6.1" id="so-q-1.6.1">
@@ -1961,6 +1984,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <div aria-label="Sharaxaad 1.6.2.2" class="explanation" data-label="Sharaxaad" data-placeholder="Sharaxaad …">Looma jeedo kiiska hadda jira, kaas oo naga dhigay inaan ku martiqaadno Xafiiska Caafimaadka (Gesundheitsamt) adigoo qof la xiriiray ah. Su’aashu waa in aad hore, ka hor kiiskan, la xiriirtay qof qaaxo qabay iyo in kale.</div></section>
 <section class="question" data-question="1.6.3" id="so-q-1.6.3">
 <h2><bdi class="number" dir="ltr">1.6.3</bdi> Ma taqaannaa qofka xanuunsan?</h2>
+<div class="choices" data-yesno="known"><span class="choice">☐ MAYA</span><span class="choice">☐ HAA</span></div>
 <p>Haddii aad taqaanno, wadarta muddada xiriirka ilaa lagu ogaaday cudurka ama ilaa la bilaabo tallaabooyinka ilaalinta (tusaale ahaan maaska, go'doonka) — sida caadiga ah 6-da toddobaad ee ka horreysay, waqtiyada oo la isku daray, khasab ma aha inay xiriir joogto ah ahaayeen:</p>
 <div class="choices"><span class="choice">☐ Ka yar 8 saacadood</span><span class="choice">☐ 8-40 saacadood</span><span class="choice">☐ Ka badan 40 saacadood</span><span class="choice">☐ Xiriir gaaban oo xooggan</span></div>
 <!-- Erklärung zu 1.6.3 (so) hier ergänzen -->
@@ -2022,6 +2046,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <p>Cinwaanka iimaylka:</p><div aria-label="Cinwaanka iimaylka:" class="email-boxes" dir="ltr" role="group"><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
 <p>Oggolaansho:</p>
 <div class="choices"><span class="choice">☐ Maya</span><span class="choice">☐ Haa, waan oggolahay</span></div>
+<p class="signature-line" data-sign="1">Saxiixa: <span class="blank">____________________</span></p>
 <!-- Erklärung zu consent (so) hier ergänzen -->
 <div aria-label="Sharaxaad consent" class="explanation" data-label="Sharaxaad" data-placeholder="Sharaxaad …">Iimayl kuuma soo diri doonno kaliya haddii aad oggolaato. Fadlan ku qor cinwaanka iimaylkaaga xarfo waaweyn oo daabacan, hal xaraf sanduuq kasta, oo si cad oo qof kasta uu u akhriyi karo. Maxaa yeelay? Waa inaan dib u qornaa far-gacmeedkaaga. Hal xaraf oo si khaldan loo akhriyo (tusaale ahaan l iyo I, 0 iyo O, u iyo v, a iyo o) ayaa keeni karta in iimaylkayagu uusan kuu soo gaadhin ama, sida ugu xun, uu gaadho qof shisheeye. Calaamadda @ iyo dhibcaha si gaar ah u cadee oo ha isticmaalin far isku xiran.</div></section>
 <aside aria-labelledby="info-so" class="further-info"><h2 id="info-so">Macluumaad dheeraad ah</h2><p class="external-notice">Xiriiriyeyaasha soo socda waxay ku geynayaan bogag internet oo dibadeed oo aan hoos iman mas’uuliyadda Waaxda Caafimaadka Dadweynaha ee Hamburg-Mitte.</p><ul><li><a href="https://explaintb.org/en/info" rel="noopener noreferrer" target="_blank">Macluumaad ku saabsan qaaxada <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/35" rel="noopener noreferrer" target="_blank">IGRA – Baaritaanka dhiigga ee caabuqa qaaxada <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/36" rel="noopener noreferrer" target="_blank">LTBI – Caabuqa qaaxada ee qarsoon <span class="external-label">· ExplainTB ↗</span></a></li></ul></aside>
@@ -2035,7 +2060,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <section class="question personal" data-question="personal" id="vi-q-personal">
 <p>Vui lòng điền thông tin để kiểm tra, giúp chúng tôi xưng hô với quý vị cho đúng:</p>
 <p>Họ: <span class="blank">__________</span>   Tên: <span class="blank">__________</span></p>
-<p>Ngày sinh: <span class="blank">__________</span>   Giới tính: <span class="blank">__________</span>   Tuổi: <span class="blank">__________</span></p>
+<p>Ngày sinh: <span class="blank">__________</span>   Giới tính: <span class="blank">__________</span></p>
 <!-- Erklärung zu personal (vi) hier ergänzen -->
 <div aria-label="Giải thích personal" class="explanation" data-label="Giải thích" data-placeholder="Giải thích …">Để tránh sai sót, xin Quý vị vui lòng tự điền lại thông tin của mình ở đây một lần nữa.</div></section>
 <section class="question" data-question="1.6.1" id="vi-q-1.6.1">
@@ -2062,6 +2087,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <div aria-label="Giải thích 1.6.2.2" class="explanation" data-label="Giải thích" data-placeholder="Giải thích …">Không phải nói đến trường hợp hiện tại khiến chúng tôi mời Quý vị đến cơ quan y tế (Gesundheitsamt) với tư cách người tiếp xúc. Câu hỏi là trước trường hợp này, Quý vị đã từng tiếp xúc với người bị bệnh lao hay chưa.</div></section>
 <section class="question" data-question="1.6.3" id="vi-q-1.6.3">
 <h2><bdi class="number" dir="ltr">1.6.3</bdi> Quý vị có biết người mắc bệnh không?</h2>
+<div class="choices" data-yesno="known"><span class="choice">☐ KHÔNG</span><span class="choice">☐ CÓ</span></div>
 <p>Nếu biết, tổng thời gian tiếp xúc tính đến khi chẩn đoán hoặc khi bắt đầu các biện pháp bảo vệ (ví dụ đeo khẩu trang, cách ly) — thường là 6 tuần trước đó, cộng dồn các lần, không nhất thiết liên tục:</p>
 <div class="choices"><span class="choice">☐ &lt;8 giờ</span><span class="choice">☐ 8-40 giờ</span><span class="choice">☐ &gt;40 giờ</span><span class="choice">☐ Tiếp xúc ngắn nhưng ở mức độ cao</span></div>
 <!-- Erklärung zu 1.6.3 (vi) hier ergänzen -->
@@ -2123,6 +2149,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <p>Địa chỉ email:</p><div aria-label="Địa chỉ email:" class="email-boxes" dir="ltr" role="group"><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
 <p>Sự đồng ý:</p>
 <div class="choices"><span class="choice">☐ Không</span><span class="choice">☐ Có, tôi đồng ý</span></div>
+<p class="signature-line" data-sign="1">Chữ ký: <span class="blank">____________________</span></p>
 <!-- Erklärung zu consent (vi) hier ergänzen -->
 <div aria-label="Giải thích consent" class="explanation" data-label="Giải thích" data-placeholder="Giải thích …">Chúng tôi chỉ gửi email cho bạn khi bạn đồng ý. Vui lòng viết địa chỉ email bằng chữ in, mỗi ô một ký tự, và rõ ràng đến mức ai cũng đọc được. Vì sao? Chúng tôi phải gõ lại chữ viết tay của bạn. Chỉ cần đọc sai một chữ cái (ví dụ l và I, 0 và O, u và v, a và o) là email của chúng tôi sẽ không đến được với bạn hoặc tệ hơn là đến tay người lạ. Hãy viết ký hiệu @ và dấu chấm thật rõ ràng và không viết chữ liền nét.</div></section>
 <aside aria-labelledby="info-vi" class="further-info"><h2 id="info-vi">Thông tin thêm</h2><p class="external-notice">Các liên kết dưới đây dẫn đến những trang web bên ngoài không thuộc trách nhiệm của Cơ quan Y tế Công cộng Hamburg-Mitte.</p><ul><li><a href="https://explaintb.org/en/info" rel="noopener noreferrer" target="_blank">Thông tin về bệnh lao <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/35" rel="noopener noreferrer" target="_blank">IGRA – Xét nghiệm máu phát hiện nhiễm lao <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/36" rel="noopener noreferrer" target="_blank">LTBI – Nhiễm lao tiềm ẩn <span class="external-label">· ExplainTB ↗</span></a></li></ul></aside>
@@ -2136,7 +2163,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <section class="question personal" data-question="personal" id="ti-q-personal">
 <p>ብትኽክል ክንጽውዓኩም ምእንቲ፣ በጃኹም ንመረጋገጺ ዝኸውን ሓበሬታኹም ምልኡ፦</p>
 <p>ስም ስድራ ቤት፦ <span class="blank">__________</span>   ስም፦ <span class="blank">__________</span></p>
-<p>ዕለተ ልደት፦ <span class="blank">__________</span>   ጾታ፦ <span class="blank">__________</span>   ዕድመ፦ <span class="blank">__________</span></p>
+<p>ዕለተ ልደት፦ <span class="blank">__________</span>   ጾታ፦ <span class="blank">__________</span></p>
 <!-- Erklärung zu personal (ti) hier ergänzen -->
 <div aria-label="መብርሂ personal" class="explanation" data-label="መብርሂ" data-placeholder="መብርሂ …">ጌጋታት ንከይህልዉ በጃኹም ሓበሬታኹም ኣብዚ ደጊምኩም ባዕላኹም ጽሓፉ።</div></section>
 <section class="question" data-question="1.6.1" id="ti-q-1.6.1">
@@ -2163,6 +2190,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <div aria-label="መብርሂ 1.6.2.2" class="explanation" data-label="መብርሂ" data-placeholder="መብርሂ …">እቲ ዝተባህለ ከም ተጸዋዒ ሰብ ናብ ቤት ጽሕፈት ጥዕና (Gesundheitsamt) ክንጸውዐኩም ዝገበረ ሕጂ ዘሎ ጉዳይ ኣይኮነን። ዝሕተት ቅድሚ እዚ ጉዳይ ምስ ዓባይ ሰዓል ዝሓመመ ሰብ ርክብ ነይሩኩም ዶ ዝብል እዩ።</div></section>
 <section class="question" data-question="1.6.3" id="ti-q-1.6.3">
 <h2><bdi class="number" dir="ltr">1.6.3</bdi> ነቲ ዝሓመመ ሰብ ትፈልጥዎ ዶ፧</h2>
+<div class="choices" data-yesno="known"><span class="choice">☐ ኣይፋል</span><span class="choice">☐ እወ</span></div>
 <p>እንተ ፈሊጥኩምዎ፣ ድምር ግዜ ርክብ ክሳብ ምርግጋጽ ሕማም ወይ ክሳብ ምጅማር ናይ ምክልኻል ስጉምትታት (ንኣብነት ማስክ፣ ውሽጣዊ ምንጻል) — መብዛሕትኡ ግዜ እተን ቅድሚኡ ዝነበራ 6 ሰሙናት፣ ኩሉ ግዜ ተደሚሩ፣ ብተኸታታሊ ክኸውን ኣየድልን፦</p>
 <div class="choices"><span class="choice">☐ ትሕቲ 8 ሰዓታት</span><span class="choice">☐ 8-40 ሰዓታት</span><span class="choice">☐ ልዕሊ 40 ሰዓታት</span><span class="choice">☐ ሓጺር ግን ጽዑቕ ርክብ</span></div>
 <!-- Erklärung zu 1.6.3 (ti) hier ergänzen -->
@@ -2224,6 +2252,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <p>ኣድራሻ ኢመይል፦</p><div aria-label="ኣድራሻ ኢመይል፦" class="email-boxes" dir="ltr" role="group"><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
 <p>ፍቓድ፦</p>
 <div class="choices"><span class="choice">☐ ኣይፋል</span><span class="choice">☐ እወ፣ እሰማማዕ እየ</span></div>
+<p class="signature-line" data-sign="1">ፊርማ፦ <span class="blank">____________________</span></p>
 <!-- Erklärung zu consent (ti) hier ergänzen -->
 <div aria-label="መብርሂ consent" class="explanation" data-label="መብርሂ" data-placeholder="መብርሂ …">ብኢመይል እንተተሰማሚዕኩም ጥራይ ክንጽሕፈልኩም ኢና። ኣድራሻ ኢመይልኩም ብዝሕተመ ፊደላት፣ ኣብ ነፍሲ ወከፍ ሳጹን ሓደ ፊደል፣ ከምኡውን ሓደ ሰብ ክላልዮ ዝኽእል ብንጹር ጸሓፍዎ። ንምንታይ? ብኢድኩም ዝጸሓፍኩሞ ክንጽሕፍ ግድን እዩ። ሓደ ፊደል ጌጋ እንተተነቢቡ (ንኣብነት l ን I፣ 0 ን O፣ u ን v፣ a ን o) ኢመይልና ኣይክበጽሓኩምን ወይ ካብኡ ዝኸፍአ ናብ ጉዳይ ዘይብሉ ሰብ ክበጽሕ ይኽእል። ምልክት @ ን ነጥቢታትን ፍሉይ ብንጹር ጸሓፍዎም፣ ዝተኣሳሰረ ጽሑፍ ድማ ኣይትጠቀሙ።</div></section>
 <aside aria-labelledby="info-ti" class="further-info"><h2 id="info-ti">ተወሳኺ ሓበሬታ</h2><p class="external-notice">እዞም ዝስዕቡ መላግቦታት ናብ ናይ ደገ መርበባት ሓበሬታ ይመርሑ። ቤት ጽሕፈት ጥዕና Hamburg-Mitte ነዞም መርበባት ሓላፍነት ኣይወስድን እዩ።</p><ul><li><a href="https://explaintb.org/en/info" rel="noopener noreferrer" target="_blank">ሓበሬታ ብዛዕባ ዓባይ ሰዓል <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/35" rel="noopener noreferrer" target="_blank">IGRA – ምርመራ ደም ንረኽሲ ዓባይ ሰዓል <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/36" rel="noopener noreferrer" target="_blank">LTBI – ድቡቕ ረኽሲ ዓባይ ሰዓል <span class="external-label">· ExplainTB ↗</span></a></li></ul></aside>
@@ -2237,7 +2266,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <section class="question personal" data-question="personal" id="uk-q-personal">
 <p>Будь ласка, внесіть свої дані для перевірки, щоб ми могли правильно до Вас звертатися:</p>
 <p>Прізвище: <span class="blank">__________</span>   Ім’я: <span class="blank">__________</span></p>
-<p>Дата народження: <span class="blank">__________</span>   Стать: <span class="blank">__________</span>   Вік: <span class="blank">__________</span></p>
+<p>Дата народження: <span class="blank">__________</span>   Стать: <span class="blank">__________</span></p>
 <!-- Erklärung zu personal (uk) hier ergänzen -->
 <div aria-label="Пояснення personal" class="explanation" data-label="Пояснення" data-placeholder="Пояснення …">Щоб уникнути помилок, будь ласка, ще раз введіть тут свої дані самостійно.</div></section>
 <section class="question" data-question="1.6.1" id="uk-q-1.6.1">
@@ -2264,6 +2293,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <div aria-label="Пояснення 1.6.2.2" class="explanation" data-label="Пояснення" data-placeholder="Пояснення …">Мається на увазі не поточний випадок, через який ми запросили Вас до органу охорони здоров’я (Gesundheitsamt) як контактну особу. Запитують, чи мали Ви раніше, до цього випадку, контакт із людиною, яка хворіла на туберкульоз.</div></section>
 <section class="question" data-question="1.6.3" id="uk-q-1.6.3">
 <h2><bdi class="number" dir="ltr">1.6.3</bdi> Чи знаєте Ви людину, яка захворіла?</h2>
+<div class="choices" data-yesno="known"><span class="choice">☐ НІ</span><span class="choice">☐ ТАК</span></div>
 <p>Якщо знаєте, загальна тривалість контакту до встановлення діагнозу або до початку захисних заходів (наприклад, маски, ізоляції) — як правило, за попередні 6 тижнів, сумарно, не обов’язково безперервно:</p>
 <div class="choices"><span class="choice">☐ &lt;8 год</span><span class="choice">☐ 8-40 год</span><span class="choice">☐ &gt;40 год</span><span class="choice">☐ Короткий інтенсивний контакт</span></div>
 <!-- Erklärung zu 1.6.3 (uk) hier ergänzen -->
@@ -2325,6 +2355,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <p>Адреса електронної пошти:</p><div aria-label="Адреса електронної пошти:" class="email-boxes" dir="ltr" role="group"><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
 <p>Згода:</p>
 <div class="choices"><span class="choice">☐ Ні</span><span class="choice">☐ Так, я погоджуюся</span></div>
+<p class="signature-line" data-sign="1">Підпис: <span class="blank">____________________</span></p>
 <!-- Erklärung zu consent (uk) hier ergänzen -->
 <div aria-label="Пояснення consent" class="explanation" data-label="Пояснення" data-placeholder="Пояснення …">Ми писатимемо вам електронною поштою лише тоді, коли ви погодитеся. Будь ласка, напишіть адресу електронної пошти друкованими літерами, по одному символу в кожну клітинку, і так розбірливо, щоб її міг прочитати будь-хто. Чому? Нам доводиться передруковувати написане вами від руки. Достатньо однієї неправильно прочитаної літери (наприклад, l і I, 0 і O, u і v, a і o), щоб наш лист не дійшов до вас або, що гірше, потрапив до стороннього. Знак @ і крапки пишіть особливо чітко та не користуйтеся злитним рукописним письмом.</div></section>
 <aside aria-labelledby="info-uk" class="further-info"><h2 id="info-uk">Додаткова інформація</h2><p class="external-notice">Наведені нижче посилання ведуть на зовнішні вебсайти, за які Управління охорони здоров’я Hamburg-Mitte не несе відповідальності.</p><ul><li><a href="https://explaintb.org/en/info" rel="noopener noreferrer" target="_blank">Інформація про туберкульоз <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/35" rel="noopener noreferrer" target="_blank">IGRA – Аналіз крові на туберкульозну інфекцію <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/36" rel="noopener noreferrer" target="_blank">LTBI – Латентна туберкульозна інфекція <span class="external-label">· ExplainTB ↗</span></a></li></ul></aside>
@@ -2338,7 +2369,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <section class="question personal" data-question="personal" id="et-q-personal">
 <p>Palun sisestage kontrollimiseks oma andmed, et saaksime teie poole õigesti pöörduda:</p>
 <p>Perekonnanimi: <span class="blank">__________</span>   Eesnimi: <span class="blank">__________</span></p>
-<p>Sünnikuupäev: <span class="blank">__________</span>   Sugu: <span class="blank">__________</span>   Vanus: <span class="blank">__________</span></p>
+<p>Sünnikuupäev: <span class="blank">__________</span>   Sugu: <span class="blank">__________</span></p>
 <!-- Erklärung zu personal (et) hier ergänzen -->
 <div aria-label="Selgitus personal" class="explanation" data-label="Selgitus" data-placeholder="Selgitus …">Vigade vältimiseks sisestage oma andmed siia palun veel kord ise.</div></section>
 <section class="question" data-question="1.6.1" id="et-q-1.6.1">
@@ -2365,6 +2396,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <div aria-label="Selgitus 1.6.2.2" class="explanation" data-label="Selgitus" data-placeholder="Selgitus …">Silmas ei peeta praegust juhtumit, mille tõttu me kutsusime teid kontaktisikuna terviseametisse (Gesundheitsamt). Küsitakse, kas teil oli varem, enne seda juhtumit, kokkupuude tuberkuloosihaigega.</div></section>
 <section class="question" data-question="1.6.3" id="et-q-1.6.3">
 <h2><bdi class="number" dir="ltr">1.6.3</bdi> Kas tunnete haigestunud inimest?</h2>
+<div class="choices" data-yesno="known"><span class="choice">☐ EI</span><span class="choice">☐ JAH</span></div>
 <p>Kui tunnete, kontakti kogukestus kuni diagnoosimiseni või kaitsemeetmete (nt maski kandmise, isolatsiooni) alguseni — tavaliselt sellele eelnenud 6 nädala jooksul, ajad kokku liidetuna, mitte tingimata järjest:</p>
 <div class="choices"><span class="choice">☐ &lt;8 tundi</span><span class="choice">☐ 8-40 tundi</span><span class="choice">☐ &gt;40 tundi</span><span class="choice">☐ Lühike intensiivne kontakt</span></div>
 <!-- Erklärung zu 1.6.3 (et) hier ergänzen -->
@@ -2426,6 +2458,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <p>E-posti aadress:</p><div aria-label="E-posti aadress:" class="email-boxes" dir="ltr" role="group"><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
 <p>Nõusolek:</p>
 <div class="choices"><span class="choice">☐ Ei</span><span class="choice">☐ Jah, olen nõus</span></div>
+<p class="signature-line" data-sign="1">Allkiri: <span class="blank">____________________</span></p>
 <!-- Erklärung zu consent (et) hier ergänzen -->
 <div aria-label="Selgitus consent" class="explanation" data-label="Selgitus" data-placeholder="Selgitus …">Kirjutame teile e-kirja ainult siis, kui olete nõus. Palun kirjutage oma e-posti aadress trükitähtedega, üks märk ühte ruutu, ja nii loetavalt, et igaüks saaks selle läbi lugeda. Miks? Peame teie käekirja ümber trükkima. Ühe valesti loetud tähe (näiteks l ja I, 0 ja O, u ja v, a ja o) tõttu ei jõua meie e-kiri teieni või, mis veel hullem, jõuab võõra inimeseni. Kirjutage @-märk ja punktid eriti selgelt ning ärge kasutage sidekirja.</div></section>
 <aside aria-labelledby="info-et" class="further-info"><h2 id="info-et">Lisateave</h2><p class="external-notice">Järgmised lingid viivad välistele veebilehtedele, mille eest Hamburg-Mitte terviseamet ei vastuta.</p><ul><li><a href="https://explaintb.org/en/info" rel="noopener noreferrer" target="_blank">Teave tuberkuloosi kohta <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/35" rel="noopener noreferrer" target="_blank">IGRA – Tuberkuloosinakkuse vereanalüüs <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/36" rel="noopener noreferrer" target="_blank">LTBI – Latentne tuberkuloosinakkus <span class="external-label">· ExplainTB ↗</span></a></li></ul></aside>
@@ -2439,7 +2472,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <section class="question personal" data-question="personal" id="lv-q-personal">
 <p>Lūdzu, ievadiet savus datus pārbaudei, lai mēs varētu Jūs pareizi uzrunāt:</p>
 <p>Uzvārds: <span class="blank">__________</span>   Vārds: <span class="blank">__________</span></p>
-<p>Dzimšanas datums: <span class="blank">__________</span>   Dzimums: <span class="blank">__________</span>   Vecums: <span class="blank">__________</span></p>
+<p>Dzimšanas datums: <span class="blank">__________</span>   Dzimums: <span class="blank">__________</span></p>
 <!-- Erklärung zu personal (lv) hier ergänzen -->
 <div aria-label="Paskaidrojums personal" class="explanation" data-label="Paskaidrojums" data-placeholder="Paskaidrojums …">Lai izvairītos no kļūdām, lūdzu, vēlreiz pašrocīgi ierakstiet šeit savus datus.</div></section>
 <section class="question" data-question="1.6.1" id="lv-q-1.6.1">
@@ -2466,6 +2499,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <div aria-label="Paskaidrojums 1.6.2.2" class="explanation" data-label="Paskaidrojums" data-placeholder="Paskaidrojums …">Šeit netiek domāts pašreizējais gadījums, sakarā ar kuru mēs Jūs uzaicinājām uz veselības pārvaldi (Gesundheitsamt) kā kontaktpersonu. Tiek jautāts, vai jau iepriekš, pirms šī gadījuma, ir bijis kontakts ar personu, kas slimoja ar tuberkulozi.</div></section>
 <section class="question" data-question="1.6.3" id="lv-q-1.6.3">
 <h2><bdi class="number" dir="ltr">1.6.3</bdi> Vai pazīstat saslimušo personu?</h2>
+<div class="choices" data-yesno="known"><span class="choice">☐ NĒ</span><span class="choice">☐ JĀ</span></div>
 <p>Ja pazīstat, kopējais kontakta ilgums līdz diagnozes noteikšanai vai aizsardzības pasākumu (piem., maskas, izolācijas) sākumam — parasti iepriekšējās 6 nedēļās, summējot laiku, ne obligāti nepārtraukti:</p>
 <div class="choices"><span class="choice">☐ &lt;8 stundas</span><span class="choice">☐ 8-40 stundas</span><span class="choice">☐ &gt;40 stundas</span><span class="choice">☐ Īss, intensīvs kontakts</span></div>
 <!-- Erklärung zu 1.6.3 (lv) hier ergänzen -->
@@ -2527,6 +2561,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <p>E-pasta adrese:</p><div aria-label="E-pasta adrese:" class="email-boxes" dir="ltr" role="group"><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
 <p>Piekrišana:</p>
 <div class="choices"><span class="choice">☐ Nē</span><span class="choice">☐ Jā, piekrītu</span></div>
+<p class="signature-line" data-sign="1">Paraksts: <span class="blank">____________________</span></p>
 <!-- Erklärung zu consent (lv) hier ergänzen -->
 <div aria-label="Paskaidrojums consent" class="explanation" data-label="Paskaidrojums" data-placeholder="Paskaidrojums …">Mēs jums rakstīsim pa e-pastu tikai tad, ja jūs piekrītat. Lūdzu, ierakstiet savu e-pasta adresi drukātiem burtiem, vienu rakstzīmi vienā rūtiņā, un tik salasāmi, lai to varētu izlasīt ikviens. Kāpēc? Mums jāpārraksta jūsu rokraksts. Pietiek ar vienu nepareizi nolasītu burtu (piemēram, l un I, 0 un O, u un v, a un o), lai mūsu e-pasts jūs nesasniegtu vai, vēl ļaunāk, nonāktu pie svešas personas. Zīmi @ un punktus rakstiet īpaši skaidri un nelietojiet savienotu rokrakstu.</div></section>
 <aside aria-labelledby="info-lv" class="further-info"><h2 id="info-lv">Papildu informācija</h2><p class="external-notice">Tālāk norādītās saites ved uz ārējām tīmekļa vietnēm, par kurām Hamburg-Mitte Sabiedrības veselības dienests nav atbildīgs.</p><ul><li><a href="https://explaintb.org/en/info" rel="noopener noreferrer" target="_blank">Informācija par tuberkulozi <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/35" rel="noopener noreferrer" target="_blank">IGRA – Asins tests tuberkulozes infekcijas noteikšanai <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/36" rel="noopener noreferrer" target="_blank">LTBI – Latenta tuberkulozes infekcija <span class="external-label">· ExplainTB ↗</span></a></li></ul></aside>
@@ -2540,7 +2575,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <section class="question personal" data-question="personal" id="lt-q-personal">
 <p>Prašome įrašyti savo duomenis patikrinimui, kad galėtume tinkamai į Jus kreiptis:</p>
 <p>Pavardė: <span class="blank">__________</span>   Vardas: <span class="blank">__________</span></p>
-<p>Gimimo data: <span class="blank">__________</span>   Lytis: <span class="blank">__________</span>   Amžius: <span class="blank">__________</span></p>
+<p>Gimimo data: <span class="blank">__________</span>   Lytis: <span class="blank">__________</span></p>
 <!-- Erklärung zu personal (lt) hier ergänzen -->
 <div aria-label="Paaiškinimas personal" class="explanation" data-label="Paaiškinimas" data-placeholder="Paaiškinimas …">Kad būtų išvengta klaidų, prašome dar kartą patiems čia įrašyti savo duomenis.</div></section>
 <section class="question" data-question="1.6.1" id="lt-q-1.6.1">
@@ -2567,6 +2602,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <div aria-label="Paaiškinimas 1.6.2.2" class="explanation" data-label="Paaiškinimas" data-placeholder="Paaiškinimas …">Turimas omenyje ne dabartinis atvejis, dėl kurio pakvietėme Jus kaip kontaktinį asmenį į sveikatos departamentą (Gesundheitsamt). Klausiama, ar jau anksčiau, prieš šį atvejį, turėjote sąlytį su asmeniu, sergančiu tuberkulioze.</div></section>
 <section class="question" data-question="1.6.3" id="lt-q-1.6.3">
 <h2><bdi class="number" dir="ltr">1.6.3</bdi> Ar pažįstate susirgusį asmenį?</h2>
+<div class="choices" data-yesno="known"><span class="choice">☐ NE</span><span class="choice">☐ TAIP</span></div>
 <p>Jei pažįstate, bendra kontakto trukmė iki diagnozės nustatymo arba apsaugos priemonių (pvz., kaukės, izoliacijos) pradžios — paprastai per prieš tai buvusias 6 savaites, laiką susumavus, nebūtinai nepertraukiamai:</p>
 <div class="choices"><span class="choice">☐ &lt;8 val.</span><span class="choice">☐ 8-40 val.</span><span class="choice">☐ &gt;40 val.</span><span class="choice">☐ Trumpas intensyvus kontaktas</span></div>
 <!-- Erklärung zu 1.6.3 (lt) hier ergänzen -->
@@ -2628,6 +2664,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <p>El. pašto adresas:</p><div aria-label="El. pašto adresas:" class="email-boxes" dir="ltr" role="group"><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
 <p>Sutikimas:</p>
 <div class="choices"><span class="choice">☐ Ne</span><span class="choice">☐ Taip, sutinku</span></div>
+<p class="signature-line" data-sign="1">Parašas: <span class="blank">____________________</span></p>
 <!-- Erklärung zu consent (lt) hier ergänzen -->
 <div aria-label="Paaiškinimas consent" class="explanation" data-label="Paaiškinimas" data-placeholder="Paaiškinimas …">El. paštu jums rašysime tik tada, jei sutinkate. Prašome savo el. pašto adresą įrašyti spausdintinėmis raidėmis, po vieną ženklą į kiekvieną langelį, ir taip įskaitomai, kad jį galėtų perskaityti kiekvienas. Kodėl? Mums tenka perrašyti jūsų rašyseną. Vien neteisingai perskaityta raidė (pavyzdžiui, l ir I, 0 ir O, u ir v, a ir o) gali lemti, kad mūsų laiškas jūsų nepasieks arba, dar blogiau, pasieks nepažįstamą žmogų. Ženklą @ ir taškus rašykite ypač aiškiai ir nenaudokite jungtinio rašto.</div></section>
 <aside aria-labelledby="info-lt" class="further-info"><h2 id="info-lt">Daugiau informacijos</h2><p class="external-notice">Toliau pateiktos nuorodos nukreipia į išorines interneto svetaines, už kurias Hamburg-Mitte visuomenės sveikatos tarnyba nėra atsakinga.</p><ul><li><a href="https://explaintb.org/en/info" rel="noopener noreferrer" target="_blank">Informacija apie tuberkuliozę <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/35" rel="noopener noreferrer" target="_blank">IGRA – Kraujo tyrimas tuberkuliozės infekcijai nustatyti <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/36" rel="noopener noreferrer" target="_blank">LTBI – Latentinė tuberkuliozės infekcija <span class="external-label">· ExplainTB ↗</span></a></li></ul></aside>
@@ -2641,7 +2678,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <section class="question personal" data-question="personal" id="mk-q-personal">
 <p>Ве молиме внесете ги Вашите податоци за проверка, за да можеме правилно да Ви се обраќаме:</p>
 <p>Презиме: <span class="blank">__________</span>   Име: <span class="blank">__________</span></p>
-<p>Датум на раѓање: <span class="blank">__________</span>   Пол: <span class="blank">__________</span>   Возраст: <span class="blank">__________</span></p>
+<p>Датум на раѓање: <span class="blank">__________</span>   Пол: <span class="blank">__________</span></p>
 <!-- Erklärung zu personal (mk) hier ergänzen -->
 <div aria-label="Објаснување personal" class="explanation" data-label="Објаснување" data-placeholder="Објаснување …">За да се избегнат грешки, Ве молиме уште еднаш самостојно да ги внесете Вашите податоци овде.</div></section>
 <section class="question" data-question="1.6.1" id="mk-q-1.6.1">
@@ -2668,6 +2705,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <div aria-label="Објаснување 1.6.2.2" class="explanation" data-label="Објаснување" data-placeholder="Објаснување …">Не се мисли на сегашниот случај заради кој Ве поканивме во здравствената служба (Gesundheitsamt) како контакт-лице. Се прашува дали пред овој случај сте имале контакт со лице што било болно од туберкулоза.</div></section>
 <section class="question" data-question="1.6.3" id="mk-q-1.6.3">
 <h2><bdi class="number" dir="ltr">1.6.3</bdi> Дали го познавате заболеното лице?</h2>
+<div class="choices" data-yesno="known"><span class="choice">☐ НЕ</span><span class="choice">☐ ДА</span></div>
 <p>Ако го познавате, вкупно времетраење на контактот до поставувањето на дијагнозата или до почетокот на заштитните мерки (на пр. маска, изолација) — обично претходните 6 недели, собрани сите периоди, не нужно непрекинато:</p>
 <div class="choices"><span class="choice">☐ &lt;8 часа</span><span class="choice">☐ 8-40 часа</span><span class="choice">☐ &gt;40 часа</span><span class="choice">☐ Краток интензивен контакт</span></div>
 <!-- Erklärung zu 1.6.3 (mk) hier ergänzen -->
@@ -2729,6 +2767,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <p>Адреса на е-пошта:</p><div aria-label="Адреса на е-пошта:" class="email-boxes" dir="ltr" role="group"><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
 <p>Согласност:</p>
 <div class="choices"><span class="choice">☐ Не</span><span class="choice">☐ Да, се согласувам</span></div>
+<p class="signature-line" data-sign="1">Потпис: <span class="blank">____________________</span></p>
 <!-- Erklärung zu consent (mk) hier ergänzen -->
 <div aria-label="Објаснување consent" class="explanation" data-label="Објаснување" data-placeholder="Објаснување …">Ќе ви пишуваме по е-пошта само ако се согласувате. Ве молиме, напишете ја вашата адреса на е-пошта со печатни букви, по еден знак во секое квадратче, и толку читливо што секој да може да ја прочита. Зошто? Мораме да го препишеме вашиот ракопис. Доволна е една погрешно прочитана буква (на пример l и I, 0 и O, u и v, a и o) за нашата порака да не стигне до вас или, уште полошо, да стигне до непозната личност. Знакот @ и точките пишувајте ги особено јасно и не користете сврзано ракописно писмо.</div></section>
 <aside aria-labelledby="info-mk" class="further-info"><h2 id="info-mk">Дополнителни информации</h2><p class="external-notice">Следните врски водат до надворешни веб-страници за кои Службата за јавно здравје Hamburg-Mitte не е одговорна.</p><ul><li><a href="https://explaintb.org/en/info" rel="noopener noreferrer" target="_blank">Информации за туберкулозата <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/35" rel="noopener noreferrer" target="_blank">IGRA – Крвен тест за туберкулозна инфекција <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/36" rel="noopener noreferrer" target="_blank">LTBI – Латентна туберкулозна инфекција <span class="external-label">· ExplainTB ↗</span></a></li></ul></aside>
@@ -2742,7 +2781,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <section class="question personal" data-question="personal" id="sq-q-personal">
 <p>Ju lutemi plotësoni të dhënat tuaja për verifikim, që të mund t’ju drejtohemi saktë:</p>
 <p>Mbiemri: <span class="blank">__________</span>   Emri: <span class="blank">__________</span></p>
-<p>Datëlindja: <span class="blank">__________</span>   Gjinia: <span class="blank">__________</span>   Mosha: <span class="blank">__________</span></p>
+<p>Datëlindja: <span class="blank">__________</span>   Gjinia: <span class="blank">__________</span></p>
 <!-- Erklärung zu personal (sq) hier ergänzen -->
 <div aria-label="Shpjegim personal" class="explanation" data-label="Shpjegim" data-placeholder="Shpjegim …">Për të shmangur gabimet, ju lutemi shkruani përsëri vetë këtu të dhënat tuaja.</div></section>
 <section class="question" data-question="1.6.1" id="sq-q-1.6.1">
@@ -2769,6 +2808,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <div aria-label="Shpjegim 1.6.2.2" class="explanation" data-label="Shpjegim" data-placeholder="Shpjegim …">Nuk nënkuptohet rasti aktual, për shkak të të cilit ju kemi ftuar si person kontakti në zyrën e shëndetit publik (Gesundheitsamt). Pyetja është nëse më herët, para këtij rasti, keni pasur kontakt me një person që ka pasur tuberkuloz.</div></section>
 <section class="question" data-question="1.6.3" id="sq-q-1.6.3">
 <h2><bdi class="number" dir="ltr">1.6.3</bdi> A e njihni personin e sëmurë?</h2>
+<div class="choices" data-yesno="known"><span class="choice">☐ JO</span><span class="choice">☐ PO</span></div>
 <p>Nëse e njihni, kohëzgjatja e përgjithshme e kontaktit deri në diagnostikim ose deri në fillimin e masave mbrojtëse (p.sh. maskë, izolim) — zakonisht 6 javët paraardhëse, duke mbledhur të gjitha periudhat, jo domosdoshmërisht pa ndërprerje:</p>
 <div class="choices"><span class="choice">☐ &lt;8 orë</span><span class="choice">☐ 8-40 orë</span><span class="choice">☐ &gt;40 orë</span><span class="choice">☐ Kontakt i shkurtër dhe intensiv</span></div>
 <!-- Erklärung zu 1.6.3 (sq) hier ergänzen -->
@@ -2830,6 +2870,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <p>Adresa e emailit:</p><div aria-label="Adresa e emailit:" class="email-boxes" dir="ltr" role="group"><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
 <p>Pëlqimi:</p>
 <div class="choices"><span class="choice">☐ Jo</span><span class="choice">☐ Po, pranoj</span></div>
+<p class="signature-line" data-sign="1">Nënshkrimi: <span class="blank">____________________</span></p>
 <!-- Erklärung zu consent (sq) hier ergänzen -->
 <div aria-label="Shpjegim consent" class="explanation" data-label="Shpjegim" data-placeholder="Shpjegim …">Do t’ju shkruajmë me email vetëm nëse jeni dakord. Ju lutemi shkruajeni adresën tuaj të emailit me shkronja shtypi, një shenjë në çdo kuti, dhe aq qartë sa ta lexojë çdokush. Pse? Duhet ta shkruajmë përsëri dorëshkrimin tuaj. Mjafton një shkronjë e lexuar gabim (për shembull l dhe I, 0 dhe O, u dhe v, a dhe o) që emaili ynë të mos arrijë te ju ose, më keq, të arrijë te një person i huaj. Shenjën @ dhe pikat shkruajini veçanërisht qartë dhe mos përdorni shkrim të lidhur.</div></section>
 <aside aria-labelledby="info-sq" class="further-info"><h2 id="info-sq">Informacione të mëtejshme</h2><p class="external-notice">Lidhjet e mëposhtme çojnë në faqe të jashtme interneti, për të cilat Zyra e Shëndetit Publik Hamburg-Mitte nuk mban përgjegjësi.</p><ul><li><a href="https://explaintb.org/en/info" rel="noopener noreferrer" target="_blank">Informacione për tuberkulozin <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/35" rel="noopener noreferrer" target="_blank">IGRA – Analizë gjaku për infeksionin tuberkular <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/36" rel="noopener noreferrer" target="_blank">LTBI – Infeksion tuberkular latent <span class="external-label">· ExplainTB ↗</span></a></li></ul></aside>
@@ -2843,7 +2884,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <section class="question personal" data-question="personal" id="th-q-personal">
 <p>กรุณากรอกข้อมูลของท่านเพื่อตรวจสอบ เพื่อให้เราเรียกท่านได้อย่างถูกต้อง:</p>
 <p>นามสกุล: <span class="blank">__________</span>   ชื่อ: <span class="blank">__________</span></p>
-<p>วันเดือนปีเกิด: <span class="blank">__________</span>   เพศ: <span class="blank">__________</span>   อายุ: <span class="blank">__________</span></p>
+<p>วันเดือนปีเกิด: <span class="blank">__________</span>   เพศ: <span class="blank">__________</span></p>
 <!-- Erklärung zu personal (th) hier ergänzen -->
 <div aria-label="คำอธิบาย personal" class="explanation" data-label="คำอธิบาย" data-placeholder="คำอธิบาย …">เพื่อหลีกเลี่ยงข้อผิดพลาด กรุณากรอกข้อมูลของท่านที่นี่อีกครั้งด้วยตนเอง</div></section>
 <section class="question" data-question="1.6.1" id="th-q-1.6.1">
@@ -2870,6 +2911,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <div aria-label="คำอธิบาย 1.6.2.2" class="explanation" data-label="คำอธิบาย" data-placeholder="คำอธิบาย …">ไม่ได้หมายถึงกรณีปัจจุบันที่ทำให้เราเชิญท่านมาที่สำนักงานสาธารณสุข (Gesundheitsamt) ในฐานะผู้สัมผัส แต่ถามว่าก่อนหน้ากรณีนี้ ท่านเคยสัมผัสกับผู้ที่เคยป่วยเป็นวัณโรคหรือไม่</div></section>
 <section class="question" data-question="1.6.3" id="th-q-1.6.3">
 <h2><bdi class="number" dir="ltr">1.6.3</bdi> ท่านรู้จักผู้ป่วยรายนี้หรือไม่?</h2>
+<div class="choices" data-yesno="known"><span class="choice">☐ ไม่เคย</span><span class="choice">☐ เคย</span></div>
 <p>หากรู้จัก ระยะเวลาสัมผัสรวมจนถึงวันที่วินิจฉัยหรือเริ่มมาตรการป้องกัน (เช่น หน้ากากอนามัย การแยกกัก) — โดยทั่วไปคือ 6 สัปดาห์ก่อนหน้านั้น โดยรวมเวลาทั้งหมด ไม่จำเป็นต้องต่อเนื่องกัน:</p>
 <div class="choices"><span class="choice">☐ น้อยกว่า 8 ชั่วโมง</span><span class="choice">☐ 8-40 ชั่วโมง</span><span class="choice">☐ มากกว่า 40 ชั่วโมง</span><span class="choice">☐ สัมผัสใกล้ชิดอย่างเข้มข้นในช่วงเวลาสั้น</span></div>
 <!-- Erklärung zu 1.6.3 (th) hier ergänzen -->
@@ -2931,6 +2973,7 @@ Keine Erfassung von Fragebogenantworten. Bei HTTPS-Aufruf wird GoatCounter für 
 <p>ที่อยู่อีเมล:</p><div aria-label="ที่อยู่อีเมล:" class="email-boxes" dir="ltr" role="group"><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
 <p>ความยินยอม:</p>
 <div class="choices"><span class="choice">☐ ไม่ยินยอม</span><span class="choice">☐ ยินยอม</span></div>
+<p class="signature-line" data-sign="1">ลายมือชื่อ: <span class="blank">____________________</span></p>
 <!-- Erklärung zu consent (th) hier ergänzen -->
 <div aria-label="คำอธิบาย consent" class="explanation" data-label="คำอธิบาย" data-placeholder="คำอธิบาย …">เราจะส่งอีเมลถึงคุณก็ต่อเมื่อคุณยินยอมเท่านั้น กรุณาเขียนที่อยู่อีเมลด้วยตัวบรรจง ช่องละ 1 ตัวอักษร และเขียนให้ชัดเจนจนทุกคนอ่านออก ทำไมจึงต้องทำเช่นนี้ เพราะเราต้องพิมพ์ตามลายมือของคุณ เพียงอ่านผิดหนึ่งตัวอักษร (เช่น l กับ I, 0 กับ O, u กับ v, a กับ o) อีเมลของเราก็อาจไปไม่ถึงคุณ หรือที่แย่กว่านั้นคือไปถึงคนแปลกหน้า กรุณาเขียนเครื่องหมาย @ และจุดให้ชัดเจนเป็นพิเศษ และอย่าเขียนตัวติดกัน</div></section>
 <aside aria-labelledby="info-th" class="further-info"><h2 id="info-th">ข้อมูลเพิ่มเติม</h2><p class="external-notice">ลิงก์ต่อไปนี้นำไปยังเว็บไซต์ภายนอก ซึ่งไม่ได้อยู่ในความรับผิดชอบของสำนักงานสาธารณสุข Hamburg-Mitte</p><ul><li><a href="https://explaintb.org/en/info" rel="noopener noreferrer" target="_blank">ข้อมูลเกี่ยวกับวัณโรค <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/35" rel="noopener noreferrer" target="_blank">IGRA – การตรวจเลือดหาการติดเชื้อวัณโรค <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/36" rel="noopener noreferrer" target="_blank">LTBI – การติดเชื้อวัณโรคระยะแฝง <span class="external-label">· ExplainTB ↗</span></a></li></ul></aside>
@@ -4144,7 +4187,7 @@ Caffamacherreihe 1–3, 20355 Hamburg<br/>
 <section class="question personal" data-question="personal" id="pt-q-personal">
 <p>Indique os seus dados para verificação, para que possamos dirigir-nos a si corretamente:</p>
 <p>Apelido: <span class="blank">__________</span>   Nome próprio: <span class="blank">__________</span></p>
-<p>Data de nascimento: <span class="blank">__________</span>   Sexo: <span class="blank">__________</span>   Idade: <span class="blank">__________</span></p>
+<p>Data de nascimento: <span class="blank">__________</span>   Sexo: <span class="blank">__________</span></p>
 <!-- Erklärung zu personal (en) hier ergänzen -->
 <div aria-label="Explicação personal" class="explanation" data-label="Explicação" data-placeholder="Explicação …">Volte a introduzir aqui os seus dados, pessoalmente, para evitar erros.</div></section>
 <section class="question" data-question="1.6.1" id="pt-q-1.6.1">
@@ -4171,6 +4214,7 @@ Caffamacherreihe 1–3, 20355 Hamburg<br/>
 <div aria-label="Explicação 1.6.2.2" class="explanation" data-label="Explicação" data-placeholder="Explicação …">Não se refere ao caso atual, que levou a que o convidássemos para o serviço de saúde pública (Gesundheitsamt) como pessoa de contacto. Pergunta-se se, antes deste caso, já teve contacto com uma pessoa que tinha tuberculose.</div></section>
 <section class="question" data-question="1.6.3" id="pt-q-1.6.3">
 <h2><bdi class="number" dir="ltr">1.6.3</bdi> Conhece a pessoa que tem tuberculose?</h2>
+<div class="choices" data-yesno="known"><span class="choice">☐ NÃO</span><span class="choice">☐ SIM</span></div>
 <p>Se for conhecida, duração total do contacto até ao diagnóstico ou ao início das medidas de proteção (por exemplo, máscara, isolamento) — geralmente as 6 semanas anteriores, somando os períodos, não necessariamente contínuos:</p>
 <div class="choices"><span class="choice">☐ &lt;8 h</span><span class="choice">☐ 8-40 h</span><span class="choice">☐ &gt;40 h</span><span class="choice">☐ Contacto breve e intenso</span></div>
 <!-- Erklärung zu 1.6.3 (en) hier ergänzen -->
@@ -4232,6 +4276,7 @@ Caffamacherreihe 1–3, 20355 Hamburg<br/>
 <p>Endereço de correio eletrónico:</p><div aria-label="Endereço de correio eletrónico:" class="email-boxes" dir="ltr" role="group"><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
 <p>Consentimento:</p>
 <div class="choices"><span class="choice">☐ Não</span><span class="choice">☐ Sim, autorizo</span></div>
+<p class="signature-line" data-sign="1">Assinatura: <span class="blank">____________________</span></p>
 <!-- Erklärung zu consent (en) hier ergänzen -->
 <div aria-label="Explicação consent" class="explanation" data-label="Explicação" data-placeholder="Explicação …">Só lhe escreveremos por correio eletrónico se estiver de acordo. Escreva o seu endereço de correio eletrónico em maiúsculas de imprensa, um carácter por quadrado, e com tanta clareza que qualquer pessoa o consiga ler. Porquê? Temos de transcrever a sua caligrafia. Basta uma única letra mal lida (por exemplo l e I, 0 e O, u e v, a e o) para que a nossa mensagem não chegue até si ou, pior, chegue a uma pessoa estranha. Escreva o sinal @ e os pontos com especial clareza e não use letra ligada.</div></section>
 <aside aria-labelledby="info-pt" class="further-info"><h2 id="info-pt">Mais informações</h2><p class="external-notice">As ligações seguintes remetem para sítios externos, que não são da responsabilidade do Departamento de Saúde Pública de Hamburg-Mitte.</p><ul><li><a href="https://explaintb.org/en/info" rel="noopener noreferrer" target="_blank">Informações sobre a tuberculose <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/35" rel="noopener noreferrer" target="_blank">IGRA – Análise ao sangue para detetar a infeção tuberculosa <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/36" rel="noopener noreferrer" target="_blank">LTBI – Infeção tuberculosa latente <span class="external-label">· ExplainTB ↗</span></a></li></ul></aside>
@@ -4298,7 +4343,7 @@ E-mail: <a href="mailto:tb-zentrum@hamburg-mitte.hamburg.de">tb-zentrum@hamburg-
 <section class="question personal" data-question="personal" id="el-q-personal">
 <p>Για επαλήθευση, παρακαλούμε συμπληρώστε τα στοιχεία σας, ώστε να μπορούμε να σας απευθυνόμαστε σωστά:</p>
 <p>Επώνυμο: <span class="blank">__________</span>   Όνομα: <span class="blank">__________</span></p>
-<p>Ημερομηνία γέννησης: <span class="blank">__________</span>   Φύλο: <span class="blank">__________</span>   Ηλικία: <span class="blank">__________</span></p>
+<p>Ημερομηνία γέννησης: <span class="blank">__________</span>   Φύλο: <span class="blank">__________</span></p>
 <!-- Erklärung zu personal (el) hier ergänzen -->
 <div aria-label="Επεξήγηση personal" class="explanation" data-label="Επεξήγηση" data-placeholder="Επεξήγηση …">Για να αποφευχθούν λάθη, παρακαλούμε συμπληρώστε ξανά εδώ τα στοιχεία σας μόνοι σας.</div></section>
 <section class="question" data-question="1.6.1" id="el-q-1.6.1">
@@ -4325,6 +4370,7 @@ E-mail: <a href="mailto:tb-zentrum@hamburg-mitte.hamburg.de">tb-zentrum@hamburg-
 <div aria-label="Επεξήγηση 1.6.2.2" class="explanation" data-label="Επεξήγηση" data-placeholder="Επεξήγηση …">Δεν εννοείται το τρέχον περιστατικό, εξαιτίας του οποίου σας καλέσαμε ως άτομο επαφής στην Υγειονομική Υπηρεσία (Gesundheitsamt). Ρωτάμε αν είχατε ήδη νωρίτερα, πριν από αυτό το περιστατικό, επαφή με άτομο που είχε φυματίωση.</div></section>
 <section class="question" data-question="1.6.3" id="el-q-1.6.3">
 <h2><bdi class="number" dir="ltr">1.6.3</bdi> Γνωρίζετε το άτομο με φυματίωση;</h2>
+<div class="choices" data-yesno="known"><span class="choice">☐ ΟΧΙ</span><span class="choice">☐ ΝΑΙ</span></div>
 <p>Αν το γνωρίζετε, συνολική διάρκεια επαφής έως τη διάγνωση ή την έναρξη μέτρων προστασίας (π.χ. μάσκα, απομόνωση) — συνήθως τις προηγούμενες 6 εβδομάδες, αθροιστικά, όχι απαραίτητα συνεχόμενα:</p>
 <div class="choices"><span class="choice">☐ &lt;8 h</span><span class="choice">☐ 8-40 h</span><span class="choice">☐ &gt;40 h</span><span class="choice">☐ Σύντομη έντονη επαφή</span></div>
 <!-- Erklärung zu 1.6.3 (el) hier ergänzen -->
@@ -4386,6 +4432,7 @@ E-mail: <a href="mailto:tb-zentrum@hamburg-mitte.hamburg.de">tb-zentrum@hamburg-
 <p>Διεύθυνση email:</p><div aria-label="Διεύθυνση email:" class="email-boxes" dir="ltr" role="group"><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
 <p>Συγκατάθεση:</p>
 <div class="choices"><span class="choice">☐ Όχι</span><span class="choice">☐ Ναι, συμφωνώ</span></div>
+<p class="signature-line" data-sign="1">Υπογραφή: <span class="blank">____________________</span></p>
 <!-- Erklärung zu consent (el) hier ergänzen -->
 <div aria-label="Επεξήγηση consent" class="explanation" data-label="Επεξήγηση" data-placeholder="Επεξήγηση …">Θα σας γράψουμε με email μόνο αν συμφωνείτε. Παρακαλούμε γράψτε τη διεύθυνση email σας με κεφαλαία τυπωμένα γράμματα, έναν χαρακτήρα ανά τετραγωνάκι, και τόσο ευανάγνωστα ώστε να μπορεί να τη διαβάσει οποιοσδήποτε. Γιατί; Πρέπει να πληκτρολογήσουμε τον χειρόγραφο γραφικό σας χαρακτήρα. Αρκεί ένα γράμμα που θα διαβαστεί λάθος (για παράδειγμα l και I, 0 και O, u και v, a και o) ώστε το email μας να μη φτάσει σε εσάς ή, χειρότερα, να φτάσει σε άγνωστο άτομο. Γράψτε το σύμβολο @ και τις τελείες ιδιαίτερα καθαρά και μη χρησιμοποιείτε ενωτικά γράμματα.</div></section>
 <aside aria-labelledby="info-el" class="further-info"><h2 id="info-el">Περισσότερες πληροφορίες</h2><p class="external-notice">Οι ακόλουθοι σύνδεσμοι οδηγούν σε εξωτερικές ιστοσελίδες για τις οποίες η Υπηρεσία Δημόσιας Υγείας Hamburg-Mitte δεν φέρει ευθύνη.</p><ul><li><a href="https://explaintb.org/en/info" rel="noopener noreferrer" target="_blank">Πληροφορίες για τη φυματίωση <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/35" rel="noopener noreferrer" target="_blank">IGRA – Εξέταση αίματος για μόλυνση από φυματίωση <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/36" rel="noopener noreferrer" target="_blank">LTBI – Λανθάνουσα μόλυνση από φυματίωση <span class="external-label">· ExplainTB ↗</span></a></li></ul></aside>
@@ -4399,7 +4446,7 @@ E-mail: <a href="mailto:tb-zentrum@hamburg-mitte.hamburg.de">tb-zentrum@hamburg-
 <section class="question personal" data-question="personal" id="ha-q-personal">
 <p>Da fatan za ku shigar da bayananku domin tabbatarwa, don mu iya kiran ku daidai:</p>
 <p>Sunan iyali: <span class="blank">__________</span>   Sunan farko: <span class="blank">__________</span></p>
-<p>Ranar haihuwa: <span class="blank">__________</span>   Jinsi: <span class="blank">__________</span>   Shekaru: <span class="blank">__________</span></p>
+<p>Ranar haihuwa: <span class="blank">__________</span>   Jinsi: <span class="blank">__________</span></p>
 <!-- Erklärung zu personal (ha) hier ergänzen -->
 <div aria-label="Bayani personal" class="explanation" data-label="Bayani" data-placeholder="Bayani …">Da fatan za ku sake shigar da bayananku a nan da kanku, domin a guji kurakurai.</div></section>
 <section class="question" data-question="1.6.1" id="ha-q-1.6.1">
@@ -4426,6 +4473,7 @@ E-mail: <a href="mailto:tb-zentrum@hamburg-mitte.hamburg.de">tb-zentrum@hamburg-
 <div aria-label="Bayani 1.6.2.2" class="explanation" data-label="Bayani" data-placeholder="Bayani …">Ba game da lamarin na yanzu da ya sa aka gayyace ku zuwa ofishin lafiya (Gesundheitsamt) a matsayin mai hulɗa ba ne ake magana. Tambayar ita ce ko, kafin wannan lamarin, kun taɓa yin hulɗa da wani mai tarin fuka.</div></section>
 <section class="question" data-question="1.6.3" id="ha-q-1.6.3">
 <h2><bdi class="number" dir="ltr">1.6.3</bdi> Shin kun san mutumin da ke da tarin fuka?</h2>
+<div class="choices" data-yesno="known"><span class="choice">☐ A'A</span><span class="choice">☐ I</span></div>
 <p>Idan kun sani, jimillar tsawon lokacin hulɗa har zuwa ganewar asali ko farkon matakan kariya (misali, sanya takunkumin fuska, keɓancewa) — yawanci makonni 6 kafin wannan, an haɗa su gaba ɗaya, ba lallai ne su zama a jere ba:</p>
 <div class="choices"><span class="choice">☐ &lt;sa’o’i 8</span><span class="choice">☐ sa’o’i 8–40</span><span class="choice">☐ &gt;sa’o’i 40</span><span class="choice">☐ Hulɗa mai tsanani amma ɗan gajeren lokaci</span></div>
 <!-- Erklärung zu 1.6.3 (ha) hier ergänzen -->
@@ -4487,6 +4535,7 @@ E-mail: <a href="mailto:tb-zentrum@hamburg-mitte.hamburg.de">tb-zentrum@hamburg-
 <p>Adireshin imel:</p><div aria-label="Adireshin imel:" class="email-boxes" dir="ltr" role="group"><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
 <p>Yarda:</p>
 <div class="choices"><span class="choice">☐ A'a</span><span class="choice">☐ I, na yarda</span></div>
+<p class="signature-line" data-sign="1">Sa hannu: <span class="blank">____________________</span></p>
 <!-- Erklärung zu consent (ha) hier ergänzen -->
 <div aria-label="Bayani consent" class="explanation" data-label="Bayani" data-placeholder="Bayani …">Za mu rubuta muku ta imel ne kawai idan kun amince. Don Allah ku rubuta adireshin imel ɗinku da manyan haruffa na bugu, harafi ɗaya a kowane akwati, kuma a bayyane sosai ta yadda kowa zai iya karanta shi. Me ya sa? Dole ne mu sake rubuta rubutun hannunku. Harafi ɗaya da aka karanta ba daidai ba (misali l da I, 0 da O, u da v, a da o) zai sa imel ɗinmu ba zai isa gare ku ba ko, abin da ya fi muni, ya isa ga baƙo. Ku rubuta alamar @ da ɗigogi a bayyane musamman, kuma kada ku yi amfani da rubutun hannu mai haɗe.</div></section>
 <aside aria-labelledby="info-ha" class="further-info"><h2 id="info-ha">Ƙarin Bayani</h2><p class="external-notice">Hanyoyin da ke biye suna kaiwa zuwa shafukan yanar gizo na waje waɗanda ba a ƙarƙashin Ma’aikatar Lafiyar Jama’a ta Hamburg-Mitte ba.</p><ul><li><a href="https://explaintb.org/en/info" rel="noopener noreferrer" target="_blank">Bayani game da tarin fuka <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/35" rel="noopener noreferrer" target="_blank">IGRA – Gwajin jini na kamuwa da tarin fuka <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/36" rel="noopener noreferrer" target="_blank">LTBI – Kamuwa da tarin fuka wanda ba ya aiki (latent) <span class="external-label">· ExplainTB ↗</span></a></li></ul></aside>
@@ -4607,7 +4656,7 @@ Imel: <a href="mailto:tb-zentrum@hamburg-mitte.hamburg.de">tb-zentrum@hamburg-mi
 <section class="question personal" data-question="personal" id="sr-q-personal">
 <p>Radi provere, molimo unesite svoje podatke kako bismo Vam se pravilno obraćali:</p>
 <p>Prezime: <span class="blank">__________</span>   Ime: <span class="blank">__________</span></p>
-<p>Datum rođenja: <span class="blank">__________</span>   Pol: <span class="blank">__________</span>   Starost: <span class="blank">__________</span></p>
+<p>Datum rođenja: <span class="blank">__________</span>   Pol: <span class="blank">__________</span></p>
 <!-- Erklärung zu personal (sr) hier ergänzen -->
 <div aria-label="Objašnjenje personal" class="explanation" data-label="Objašnjenje" data-placeholder="Objašnjenje …">Molimo unesite svoje podatke ovde još jednom sami, da bi se izbegle greške.</div></section>
 <section class="question" data-question="1.6.1" id="sr-q-1.6.1">
@@ -4634,6 +4683,7 @@ Imel: <a href="mailto:tb-zentrum@hamburg-mitte.hamburg.de">tb-zentrum@hamburg-mi
 <div aria-label="Objašnjenje 1.6.2.2" class="explanation" data-label="Objašnjenje" data-placeholder="Objašnjenje …">Ne misli se na sadašnji slučaj zbog kojeg smo Vas kao kontakt osobu pozvali u zdravstveni ured (Gesundheitsamt). Pitamo da li ste ranije, pre ovog slučaja, imali kontakt sa osobom koja je bolovala od tuberkuloze.</div></section>
 <section class="question" data-question="1.6.3" id="sr-q-1.6.3">
 <h2><bdi class="number" dir="ltr">1.6.3</bdi> Da li poznajete osobu obolelu od tuberkuloze?</h2>
+<div class="choices" data-yesno="known"><span class="choice">☐ NE</span><span class="choice">☐ DA</span></div>
 <p>Ako je poznajete, ukupno trajanje kontakta do postavljanja dijagnoze ili do početka mera zaštite (npr. maska, izolacija) — obično prethodnih 6 nedelja, sabrano, ne mora biti neprekidno:</p>
 <div class="choices"><span class="choice">☐ &lt;8 h</span><span class="choice">☐ 8-40 h</span><span class="choice">☐ &gt;40 h</span><span class="choice">☐ Kratak intenzivan kontakt</span></div>
 <!-- Erklärung zu 1.6.3 (sr) hier ergänzen -->
@@ -4695,6 +4745,7 @@ Imel: <a href="mailto:tb-zentrum@hamburg-mitte.hamburg.de">tb-zentrum@hamburg-mi
 <p>Adresa e-pošte:</p><div aria-label="Adresa e-pošte:" class="email-boxes" dir="ltr" role="group"><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
 <p>Saglasnost:</p>
 <div class="choices"><span class="choice">☐ Ne</span><span class="choice">☐ Da, saglasan/saglasna sam</span></div>
+<p class="signature-line" data-sign="1">Potpis: <span class="blank">____________________</span></p>
 <!-- Erklärung zu consent (sr) hier ergänzen -->
 <div aria-label="Objašnjenje consent" class="explanation" data-label="Objašnjenje" data-placeholder="Objašnjenje …">Pisaćemo vam e-poštom samo ako se slažete. Molimo vas da adresu e-pošte upišete štampanim slovima, po jedan znak u svako polje, i toliko čitko da je svako može pročitati. Zašto? Moramo da prekucamo vaš rukopis. Dovoljno je jedno pogrešno pročitano slovo (na primer l i I, 0 i O, u i v, a i o) da naša poruka ne stigne do vas ili, još gore, stigne do nepoznate osobe. Znak @ i tačke pišite posebno jasno i ne koristite povezano rukopisno pismo.</div></section>
 <aside aria-labelledby="info-sr" class="further-info"><h2 id="info-sr">Dodatne informacije</h2><p class="external-notice">Sledeći linkovi vode na spoljne internet stranice za koje Zdravstveni ured Hamburg-Mitte ne snosi odgovornost.</p><ul><li><a href="https://explaintb.org/en/info" rel="noopener noreferrer" target="_blank">Informacije o tuberkulozi <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/35" rel="noopener noreferrer" target="_blank">IGRA – test krvi za infekciju tuberkulozom <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/36" rel="noopener noreferrer" target="_blank">LTBI – latentna infekcija tuberkulozom <span class="external-label">· ExplainTB ↗</span></a></li></ul></aside>
@@ -4762,7 +4813,7 @@ Imejl: <a href="mailto:tb-zentrum@hamburg-mitte.hamburg.de">tb-zentrum@hamburg-m
 <section class="question personal" data-question="personal" id="hr-q-personal">
 <p>Radi provjere molimo unesite svoje podatke kako bismo Vam se mogli ispravno obraćati:</p>
 <p>Prezime: <span class="blank">__________</span>   Ime: <span class="blank">__________</span></p>
-<p>Datum rođenja: <span class="blank">__________</span>   Spol: <span class="blank">__________</span>   Dob: <span class="blank">__________</span></p>
+<p>Datum rođenja: <span class="blank">__________</span>   Spol: <span class="blank">__________</span></p>
 <!-- Erklärung zu personal (hr) hier ergänzen -->
 <div aria-label="Objašnjenje personal" class="explanation" data-label="Objašnjenje" data-placeholder="Objašnjenje …">Kako bi se izbjegle pogreške, molimo unesite svoje podatke ovdje još jednom sami.</div></section>
 <section class="question" data-question="1.6.1" id="hr-q-1.6.1">
@@ -4789,6 +4840,7 @@ Imejl: <a href="mailto:tb-zentrum@hamburg-mitte.hamburg.de">tb-zentrum@hamburg-m
 <div aria-label="Objašnjenje 1.6.2.2" class="explanation" data-label="Objašnjenje" data-placeholder="Objašnjenje …">Ne misli se na sadašnji slučaj zbog kojeg smo Vas kao kontakt osobu pozvali u zdravstveni ured (Gesundheitsamt). Pitamo jeste li ranije, prije ovog slučaja, imali kontakt s osobom koja je bolovala od tuberkuloze.</div></section>
 <section class="question" data-question="1.6.3" id="hr-q-1.6.3">
 <h2><bdi class="number" dir="ltr">1.6.3</bdi> Poznajete li osobu oboljelu od tuberkuloze?</h2>
+<div class="choices" data-yesno="known"><span class="choice">☐ NE</span><span class="choice">☐ DA</span></div>
 <p>Ako je poznajete, ukupno trajanje kontakta do postavljanja dijagnoze ili do početka mjera zaštite (npr. maska, izolacija) — obično prethodnih 6 tjedana, zbrojeno, ne mora biti neprekinuto:</p>
 <div class="choices"><span class="choice">☐ &lt;8 h</span><span class="choice">☐ 8-40 h</span><span class="choice">☐ &gt;40 h</span><span class="choice">☐ Kratak intenzivan kontakt</span></div>
 <!-- Erklärung zu 1.6.3 (hr) hier ergänzen -->
@@ -4850,6 +4902,7 @@ Imejl: <a href="mailto:tb-zentrum@hamburg-mitte.hamburg.de">tb-zentrum@hamburg-m
 <p>Adresa e-pošte:</p><div aria-label="Adresa e-pošte:" class="email-boxes" dir="ltr" role="group"><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
 <p>Suglasnost:</p>
 <div class="choices"><span class="choice">☐ Ne</span><span class="choice">☐ Da, suglasan/suglasna sam</span></div>
+<p class="signature-line" data-sign="1">Potpis: <span class="blank">____________________</span></p>
 <!-- Erklärung zu consent (hr) hier ergänzen -->
 <div aria-label="Objašnjenje consent" class="explanation" data-label="Objašnjenje" data-placeholder="Objašnjenje …">Pisat ćemo vam e-poštom samo ako se slažete. Molimo vas da adresu e-pošte upišete tiskanim slovima, po jedan znak u svako polje, i toliko čitko da je svatko može pročitati. Zašto? Moramo prepisati vaš rukopis. Dovoljno je jedno krivo pročitano slovo (na primjer l i I, 0 i O, u i v, a i o) da naša poruka ne stigne do vas ili, još gore, stigne nepoznatoj osobi. Znak @ i točke pišite posebno jasno i ne koristite povezano rukopisno pismo.</div></section>
 <aside aria-labelledby="info-hr" class="further-info"><h2 id="info-hr">Dodatne informacije</h2><p class="external-notice">Sljedeće poveznice vode na vanjske internetske stranice za koje Zdravstveni ured Hamburg-Mitte ne snosi odgovornost.</p><ul><li><a href="https://explaintb.org/en/info" rel="noopener noreferrer" target="_blank">Informacije o tuberkulozi <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/35" rel="noopener noreferrer" target="_blank">IGRA – krvna pretraga za infekciju tuberkulozom <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/36" rel="noopener noreferrer" target="_blank">LTBI – latentna infekcija tuberkulozom <span class="external-label">· ExplainTB ↗</span></a></li></ul></aside>
@@ -4917,7 +4970,7 @@ E-pošta: <a href="mailto:tb-zentrum@hamburg-mitte.hamburg.de">tb-zentrum@hambur
 <section class="question personal" data-question="personal" id="sl-q-personal">
 <p>Za preverjanje prosimo vnesite svoje podatke, da Vas bomo lahko pravilno nagovarjali:</p>
 <p>Priimek: <span class="blank">__________</span>   Ime: <span class="blank">__________</span></p>
-<p>Datum rojstva: <span class="blank">__________</span>   Spol: <span class="blank">__________</span>   Starost: <span class="blank">__________</span></p>
+<p>Datum rojstva: <span class="blank">__________</span>   Spol: <span class="blank">__________</span></p>
 <!-- Erklärung zu personal (sl) hier ergänzen -->
 <div aria-label="Pojasnilo personal" class="explanation" data-label="Pojasnilo" data-placeholder="Pojasnilo …">Da bi se izognili napakam, prosimo, vnesite svoje podatke tukaj še enkrat sami.</div></section>
 <section class="question" data-question="1.6.1" id="sl-q-1.6.1">
@@ -4944,6 +4997,7 @@ E-pošta: <a href="mailto:tb-zentrum@hamburg-mitte.hamburg.de">tb-zentrum@hambur
 <div aria-label="Pojasnilo 1.6.2.2" class="explanation" data-label="Pojasnilo" data-placeholder="Pojasnilo …">Ne misli se na sedanji primer, zaradi katerega smo Vas kot kontaktno osebo povabili na zdravstveni urad (Gesundheitsamt). Sprašujemo, ali ste že prej, pred tem primerom, imeli stik z osebo, ki je bolehala za tuberkulozo.</div></section>
 <section class="question" data-question="1.6.3" id="sl-q-1.6.3">
 <h2><bdi class="number" dir="ltr">1.6.3</bdi> Ali poznate osebo s tuberkulozo?</h2>
+<div class="choices" data-yesno="known"><span class="choice">☐ NE</span><span class="choice">☐ DA</span></div>
 <p>Če jo poznate, skupno trajanje stika do postavitve diagnoze ali do začetka zaščitnih ukrepov (npr. maska, izolacija) — običajno prejšnjih 6 tednov, seštevek, ni nujno neprekinjeno:</p>
 <div class="choices"><span class="choice">☐ &lt;8 h</span><span class="choice">☐ 8-40 h</span><span class="choice">☐ &gt;40 h</span><span class="choice">☐ Kratek intenziven stik</span></div>
 <!-- Erklärung zu 1.6.3 (sl) hier ergänzen -->
@@ -5005,6 +5059,7 @@ E-pošta: <a href="mailto:tb-zentrum@hamburg-mitte.hamburg.de">tb-zentrum@hambur
 <p>E-poštni naslov:</p><div aria-label="E-poštni naslov:" class="email-boxes" dir="ltr" role="group"><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
 <p>Soglasje:</p>
 <div class="choices"><span class="choice">☐ Ne</span><span class="choice">☐ Da, soglašam</span></div>
+<p class="signature-line" data-sign="1">Podpis: <span class="blank">____________________</span></p>
 <!-- Erklärung zu consent (sl) hier ergänzen -->
 <div aria-label="Pojasnilo consent" class="explanation" data-label="Pojasnilo" data-placeholder="Pojasnilo …">Po e-pošti vam bomo pisali samo, če se strinjate. Prosimo, napišite svoj e-poštni naslov s tiskanimi črkami, en znak v vsako polje, in tako čitljivo, da ga lahko prebere vsakdo. Zakaj? Vaš rokopis moramo prepisati. Dovolj je ena narobe prebrana črka (na primer l in I, 0 in O, u in v, a in o), da naše sporočilo ne pride do vas ali, še huje, pride do neznane osebe. Znak @ in pike pišite posebej jasno in ne uporabljajte povezanega rokopisa.</div></section>
 <aside aria-labelledby="info-sl" class="further-info"><h2 id="info-sl">Dodatne informacije</h2><p class="external-notice">Naslednje povezave vodijo na zunanje spletne strani, za katere Zdravstveni urad Hamburg-Mitte ne odgovarja.</p><ul><li><a href="https://explaintb.org/en/info" rel="noopener noreferrer" target="_blank">Informacije o tuberkulozi <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/35" rel="noopener noreferrer" target="_blank">IGRA – krvni test za okužbo s tuberkulozo <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/36" rel="noopener noreferrer" target="_blank">LTBI – latentna okužba s tuberkulozo <span class="external-label">· ExplainTB ↗</span></a></li></ul></aside>
@@ -5072,7 +5127,7 @@ E-pošta: <a href="mailto:tb-zentrum@hamburg-mitte.hamburg.de">tb-zentrum@hambur
 <section class="question personal" data-question="personal" id="ur-q-personal">
 <p>تصدیق کے لیے براہِ کرم اپنی معلومات درج کریں تاکہ ہم آپ کو درست طور پر مخاطب کر سکیں:</p>
 <p>خاندانی نام: <span class="blank">__________</span>   نام: <span class="blank">__________</span></p>
-<p>تاریخِ پیدائش: <span class="blank">__________</span>   جنس: <span class="blank">__________</span>   عمر: <span class="blank">__________</span></p>
+<p>تاریخِ پیدائش: <span class="blank">__________</span>   جنس: <span class="blank">__________</span></p>
 <!-- Erklärung zu personal (ur) hier ergänzen -->
 <div aria-label="وضاحت personal" class="explanation" data-label="وضاحت" data-placeholder="وضاحت …">غلطیوں سے بچنے کے لیے براہِ کرم اپنی معلومات یہاں ایک بار پھر خود درج کریں۔</div></section>
 <section class="question" data-question="1.6.1" id="ur-q-1.6.1">
@@ -5099,6 +5154,7 @@ E-pošta: <a href="mailto:tb-zentrum@hamburg-mitte.hamburg.de">tb-zentrum@hambur
 <div aria-label="وضاحت 1.6.2.2" class="explanation" data-label="وضاحت" data-placeholder="وضاحت …">اس سے مراد موجودہ کیس نہیں ہے جس کی وجہ سے ہم نے آپ کو رابطے کے فرد کے طور پر محکمۂ صحت (Gesundheitsamt) میں بلایا ہے۔ سوال یہ ہے کہ کیا اس کیس سے پہلے آپ کا کسی ایسے شخص سے رابطہ رہا جسے تپ دق تھی۔</div></section>
 <section class="question" data-question="1.6.3" id="ur-q-1.6.3">
 <h2><bdi class="number" dir="ltr">1.6.3</bdi> کیا آپ تپ دق کے مریض کو جانتے ہیں؟</h2>
+<div class="choices" data-yesno="known"><span class="choice">☐ نہیں</span><span class="choice">☐ ہاں</span></div>
 <p>اگر جانتے ہیں تو تشخیص یا حفاظتی تدابیر (مثلاً ماسک، آئیسولیشن) کے آغاز تک کا کل رابطہ (عام طور پر اس سے پہلے کے 6 ہفتے، جمع کر کے، لگاتار ہونا ضروری نہیں):</p>
 <div class="choices"><span class="choice">☐ &lt;8 h</span><span class="choice">☐ 8-40 h</span><span class="choice">☐ &gt;40 h</span><span class="choice">☐ مختصر مگر شدید رابطہ</span></div>
 <!-- Erklärung zu 1.6.3 (ur) hier ergänzen -->
@@ -5160,6 +5216,7 @@ E-pošta: <a href="mailto:tb-zentrum@hamburg-mitte.hamburg.de">tb-zentrum@hambur
 <p>ای میل ایڈریس:</p><div aria-label="ای میل ایڈریس:" class="email-boxes" dir="ltr" role="group"><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
 <p>رضامندی:</p>
 <div class="choices"><span class="choice">☐ نہیں</span><span class="choice">☐ ہاں، میں رضامند ہوں</span></div>
+<p class="signature-line" data-sign="1">دستخط: <span class="blank">____________________</span></p>
 <!-- Erklärung zu consent (ur) hier ergänzen -->
 <div aria-label="وضاحت consent" class="explanation" data-label="وضاحت" data-placeholder="وضاحت …">ہم آپ کو ای میل صرف اسی صورت میں بھیجیں گے جب آپ رضامند ہوں۔ براہِ کرم اپنا ای میل ایڈریس بڑے چھپے ہوئے حروف میں، ہر خانے میں ایک حرف، اور اتنا صاف لکھیں کہ ہر کوئی پڑھ سکے۔ کیوں؟ ہمیں آپ کی ہاتھ کی تحریر ٹائپ کرنی پڑتی ہے۔ ایک بھی غلط پڑھا گیا حرف (مثلاً l اور I، 0 اور O، u اور v، a اور o) ہو تو ہماری ای میل آپ تک نہیں پہنچے گی یا اس سے بھی برا، کسی اجنبی کو پہنچ جائے گی۔ @ کا نشان اور نقطے خاص طور پر صاف لکھیں اور جڑی ہوئی تحریر استعمال نہ کریں۔</div></section>
 <aside aria-labelledby="info-ur" class="further-info"><h2 id="info-ur">مزید معلومات</h2><p class="external-notice">درج ذیل لنک بیرونی ویب سائٹس پر لے جاتے ہیں جن کی ذمہ داری محکمۂ صحت ہیمبرگ-میٹے پر نہیں ہے۔</p><ul><li><a href="https://explaintb.org/en/info" rel="noopener noreferrer" target="_blank">تپ دق کے بارے میں معلومات <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/35" rel="noopener noreferrer" target="_blank">IGRA – تپ دق کے انفیکشن کا خون کا ٹیسٹ <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/36" rel="noopener noreferrer" target="_blank">LTBI – خفیہ (لیٹنٹ) تپ دق انفیکشن <span class="external-label">· ExplainTB ↗</span></a></li></ul></aside>
@@ -5227,7 +5284,7 @@ Caffamacherreihe 1–3, 20355 Hamburg<br/>
 <section class="question personal" data-question="personal" id="ps-q-personal">
 <p>د تصدیق لپاره مهرباني وکړئ خپل معلومات ولیکئ ترڅو موږ تاسو ته سم خطاب وکړو:</p>
 <p>تخلص: <span class="blank">__________</span>   نوم: <span class="blank">__________</span></p>
-<p>د زېږون نېټه: <span class="blank">__________</span>   جنس: <span class="blank">__________</span>   عمر: <span class="blank">__________</span></p>
+<p>د زېږون نېټه: <span class="blank">__________</span>   جنس: <span class="blank">__________</span></p>
 <!-- Erklärung zu personal (ps) hier ergänzen -->
 <div aria-label="څرګندونه personal" class="explanation" data-label="څرګندونه" data-placeholder="څرګندونه …">د تېروتنو د مخنیوي لپاره مهرباني وکړئ خپل معلومات دلته یو ځل بیا پخپله ولیکئ.</div></section>
 <section class="question" data-question="1.6.1" id="ps-q-1.6.1">
@@ -5254,6 +5311,7 @@ Caffamacherreihe 1–3, 20355 Hamburg<br/>
 <div aria-label="څرګندونه 1.6.2.2" class="explanation" data-label="څرګندونه" data-placeholder="څرګندونه …">مراد هغه اوسنۍ پېښه نه ده چې د هغې له امله موږ تاسو د اړیکې د کس په توګه روغتیا ادارې (Gesundheitsamt) ته رابللی یاست. پوښتنه دا ده چې ایا تاسو له دې پېښې مخکې له داسې چا سره اړیکه درلوده چې توبرکلوز یې درلود.</div></section>
 <section class="question" data-question="1.6.3" id="ps-q-1.6.3">
 <h2><bdi class="number" dir="ltr">1.6.3</bdi> ایا تاسو توبرکلوز ناروغ پېژنئ؟</h2>
+<div class="choices" data-yesno="known"><span class="choice">☐ نه</span><span class="choice">☐ هو</span></div>
 <p>که پیژنئ، د تشخیص یا د خونديتوب تدابیرو (لکه ماسک، جلا کول) د پیل پورې د اړیکې ټوله موده — معمولاً مخکینۍ 6 اونۍ، سره جمع شوې، نه یو ځل:</p>
 <div class="choices"><span class="choice">☐ &lt;8 h</span><span class="choice">☐ 8-40 h</span><span class="choice">☐ &gt;40 h</span><span class="choice">☐ لنډه خو سخته اړیکه</span></div>
 <!-- Erklärung zu 1.6.3 (ps) hier ergänzen -->
@@ -5315,6 +5373,7 @@ Caffamacherreihe 1–3, 20355 Hamburg<br/>
 <p>د بریښنالیک پته:</p><div aria-label="د بریښنالیک پته:" class="email-boxes" dir="ltr" role="group"><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
 <p>موافقه:</p>
 <div class="choices"><span class="choice">☐ نه</span><span class="choice">☐ هو، زه موافق یم</span></div>
+<p class="signature-line" data-sign="1">لاسلیک: <span class="blank">____________________</span></p>
 <!-- Erklärung zu consent (ps) hier ergänzen -->
 <div aria-label="څرګندونه consent" class="explanation" data-label="څرګندونه" data-placeholder="څرګندونه …">موږ به تاسو ته یوازې هغه وخت بریښنالیک ولېږو چې تاسو موافق یاست. مهرباني وکړئ خپل د بریښنالیک پته په چاپي توروو، په هر خونه کې یو توری، او دومره څرګنده ولیکئ چې هر څوک یې ولوستلای شي. ولې؟ موږ باید ستاسو لاسي لیکنه بیا ټایپ کړو. یو غلط لوستل شوی توری (د بېلګې په توګه l او I، 0 او O، u او v، a او o) بس دی چې زموږ بریښنالیک تاسو ته ونه رسېږي یا، بدتر، یو بهرني کس ته ورسېږي. د @ نښه او ټکي په ځانګړې توګه څرګند ولیکئ او تړلې لیکنه مه کاروئ.</div></section>
 <aside aria-labelledby="info-ps" class="further-info"><h2 id="info-ps">نور معلومات</h2><p class="external-notice">لاندې لینکونه بهرنیو وېب پاڼو ته ځي چې مسؤلیت یې د هامبورګ-میټه روغتیا ادارې نه دی.</p><ul><li><a href="https://explaintb.org/en/info" rel="noopener noreferrer" target="_blank">د توبرکلوز په اړه معلومات <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/35" rel="noopener noreferrer" target="_blank">IGRA – د توبرکلوز د انتان د وینې ازموینه <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/36" rel="noopener noreferrer" target="_blank">LTBI – پټ (لیټنټ) توبرکلوز انتان <span class="external-label">· ExplainTB ↗</span></a></li></ul></aside>
@@ -5382,7 +5441,7 @@ Caffamacherreihe 1–3, 20355 Hamburg<br/>
 <section class="question personal" data-question="personal" id="cs-q-personal">
 <p>Pro kontrolu prosím uveďte své údaje, abychom Vás mohli správně oslovovat:</p>
 <p>Příjmení: <span class="blank">__________</span>   Jméno: <span class="blank">__________</span></p>
-<p>Datum narození: <span class="blank">__________</span>   Pohlaví: <span class="blank">__________</span>   Věk: <span class="blank">__________</span></p>
+<p>Datum narození: <span class="blank">__________</span>   Pohlaví: <span class="blank">__________</span></p>
 <!-- Erklärung zu personal (cs) hier ergänzen -->
 <div aria-label="Vysvětlení personal" class="explanation" data-label="Vysvětlení" data-placeholder="Vysvětlení …">Zadejte prosím své údaje ještě jednou sami, abyste předešli chybám.</div></section>
 <section class="question" data-question="1.6.1" id="cs-q-1.6.1">
@@ -5409,6 +5468,7 @@ Caffamacherreihe 1–3, 20355 Hamburg<br/>
 <div aria-label="Vysvětlení 1.6.2.2" class="explanation" data-label="Vysvětlení" data-placeholder="Vysvětlení …">Nemyslí se současný případ, kvůli kterému jsme Vás jako kontaktní osobu pozvali na zdravotní úřad (Gesundheitsamt). Ptáme se, zda jste měl(a) již dříve, před tímto případem, kontakt s osobou, která byla nemocná tuberkulózou.</div></section>
 <section class="question" data-question="1.6.3" id="cs-q-1.6.3">
 <h2><bdi class="number" dir="ltr">1.6.3</bdi> Znáte osobu nemocnou tuberkulózou?</h2>
+<div class="choices" data-yesno="known"><span class="choice">☐ NE</span><span class="choice">☐ ANO</span></div>
 <p>Pokud ano, celková délka kontaktu do stanovení diagnózy nebo do zahájení ochranných opatření (např. roušky, izolace) – obvykle předchozích 6 týdnů, sečteno, ne nutně vcelku:</p>
 <div class="choices"><span class="choice">☐ &lt;8 h</span><span class="choice">☐ 8-40 h</span><span class="choice">☐ &gt;40 h</span><span class="choice">☐ Intenzivní krátký kontakt</span></div>
 <!-- Erklärung zu 1.6.3 (cs) hier ergänzen -->
@@ -5470,6 +5530,7 @@ Caffamacherreihe 1–3, 20355 Hamburg<br/>
 <p>E-mailová adresa:</p><div aria-label="E-mailová adresa:" class="email-boxes" dir="ltr" role="group"><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
 <p>Souhlas:</p>
 <div class="choices"><span class="choice">☐ Ne</span><span class="choice">☐ Ano, souhlasím</span></div>
+<p class="signature-line" data-sign="1">Podpis: <span class="blank">____________________</span></p>
 <!-- Erklärung zu consent (cs) hier ergänzen -->
 <div aria-label="Vysvětlení consent" class="explanation" data-label="Vysvětlení" data-placeholder="Vysvětlení …">E-mailem vám napíšeme jen tehdy, pokud souhlasíte. Napište prosím svou e-mailovou adresu tiskacím písmem, jeden znak do jednoho políčka, a tak čitelně, aby ji mohl přečíst každý. Proč? Musíme váš rukopis přepsat. Stačí jediné špatně přečtené písmeno (například l a I, 0 a O, u a v, a a o) a náš e-mail se k vám nedostane nebo, což je horší, dostane se k cizí osobě. Znak @ a tečky pište obzvlášť zřetelně a nepoužívejte psací písmo.</div></section>
 <aside aria-labelledby="info-cs" class="further-info"><h2 id="info-cs">Další informace</h2><p class="external-notice">Následující odkazy vedou na externí internetové stránky, za které Zdravotní úřad Hamburg-Mitte nenese odpovědnost.</p><ul><li><a href="https://explaintb.org/en/info" rel="noopener noreferrer" target="_blank">Informace o tuberkulóze <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/35" rel="noopener noreferrer" target="_blank">IGRA – krevní test na tuberkulózní infekci <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/36" rel="noopener noreferrer" target="_blank">LTBI – latentní tuberkulózní infekce <span class="external-label">· ExplainTB ↗</span></a></li></ul></aside>
@@ -5537,7 +5598,7 @@ E-mail: <a href="mailto:tb-zentrum@hamburg-mitte.hamburg.de">tb-zentrum@hamburg-
 <section class="question personal" data-question="personal" id="sk-q-personal">
 <p>Na kontrolu, prosím, uveďte svoje údaje, aby sme Vás mohli správne oslovovať:</p>
 <p>Priezvisko: <span class="blank">__________</span>   Meno: <span class="blank">__________</span></p>
-<p>Dátum narodenia: <span class="blank">__________</span>   Pohlavie: <span class="blank">__________</span>   Vek: <span class="blank">__________</span></p>
+<p>Dátum narodenia: <span class="blank">__________</span>   Pohlavie: <span class="blank">__________</span></p>
 <!-- Erklärung zu personal (sk) hier ergänzen -->
 <div aria-label="Vysvetlenie personal" class="explanation" data-label="Vysvetlenie" data-placeholder="Vysvetlenie …">Zadajte, prosím, svoje údaje ešte raz sami, aby ste predišli chybám.</div></section>
 <section class="question" data-question="1.6.1" id="sk-q-1.6.1">
@@ -5564,6 +5625,7 @@ E-mail: <a href="mailto:tb-zentrum@hamburg-mitte.hamburg.de">tb-zentrum@hamburg-
 <div aria-label="Vysvetlenie 1.6.2.2" class="explanation" data-label="Vysvetlenie" data-placeholder="Vysvetlenie …">Nemyslí sa súčasný prípad, kvôli ktorému sme Vás ako kontaktnú osobu pozvali na zdravotný úrad (Gesundheitsamt). Pýtame sa, či ste mali už skôr, pred týmto prípadom, kontakt s osobou, ktorá bola chorá na tuberkulózu.</div></section>
 <section class="question" data-question="1.6.3" id="sk-q-1.6.3">
 <h2><bdi class="number" dir="ltr">1.6.3</bdi> Poznáte osobu chorú na tuberkulózu?</h2>
+<div class="choices" data-yesno="known"><span class="choice">☐ NIE</span><span class="choice">☐ ÁNO</span></div>
 <p>Ak áno, celková dĺžka kontaktu do stanovenia diagnózy alebo do začiatku ochranných opatrení (napr. rúška, izolácia) – zvyčajne predchádzajúcich 6 týždňov, spolu sčítané, nie nutne naraz:</p>
 <div class="choices"><span class="choice">☐ &lt;8 h</span><span class="choice">☐ 8-40 h</span><span class="choice">☐ &gt;40 h</span><span class="choice">☐ Intenzívny krátky kontakt</span></div>
 <!-- Erklärung zu 1.6.3 (sk) hier ergänzen -->
@@ -5625,6 +5687,7 @@ E-mail: <a href="mailto:tb-zentrum@hamburg-mitte.hamburg.de">tb-zentrum@hamburg-
 <p>E-mailová adresa:</p><div aria-label="E-mailová adresa:" class="email-boxes" dir="ltr" role="group"><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
 <p>Súhlas:</p>
 <div class="choices"><span class="choice">☐ Nie</span><span class="choice">☐ Áno, súhlasím</span></div>
+<p class="signature-line" data-sign="1">Podpis: <span class="blank">____________________</span></p>
 <!-- Erklärung zu consent (sk) hier ergänzen -->
 <div aria-label="Vysvetlenie consent" class="explanation" data-label="Vysvetlenie" data-placeholder="Vysvetlenie …">E-mailom vám napíšeme len vtedy, ak súhlasíte. Napíšte, prosím, svoju e-mailovú adresu tlačeným písmom, jeden znak do jedného políčka, a tak čitateľne, aby ju mohol prečítať každý. Prečo? Musíme váš rukopis prepísať. Stačí jedno nesprávne prečítané písmeno (napríklad l a I, 0 a O, u a v, a a o) a náš e-mail sa k vám nedostane alebo, čo je horšie, dostane sa k cudzej osobe. Znak @ a bodky píšte obzvlášť zreteľne a nepoužívajte písané písmo.</div></section>
 <aside aria-labelledby="info-sk" class="further-info"><h2 id="info-sk">Ďalšie informácie</h2><p class="external-notice">Nasledujúce odkazy vedú na externé internetové stránky, za ktoré Zdravotný úrad Hamburg-Mitte nenesie zodpovednosť.</p><ul><li><a href="https://explaintb.org/en/info" rel="noopener noreferrer" target="_blank">Informácie o tuberkulóze <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/35" rel="noopener noreferrer" target="_blank">IGRA – krvný test na tuberkulóznu infekciu <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/36" rel="noopener noreferrer" target="_blank">LTBI – latentná tuberkulózna infekcia <span class="external-label">· ExplainTB ↗</span></a></li></ul></aside>
@@ -5692,7 +5755,7 @@ E-mail: <a href="mailto:tb-zentrum@hamburg-mitte.hamburg.de">tb-zentrum@hamburg-
 <section class="question personal" data-question="personal" id="it-q-personal">
 <p>Per la verifica, inserisca i suoi dati, in modo che possiamo rivolgerci a lei correttamente:</p>
 <p>Cognome: <span class="blank">__________</span>   Nome: <span class="blank">__________</span></p>
-<p>Data di nascita: <span class="blank">__________</span>   Sesso: <span class="blank">__________</span>   Età: <span class="blank">__________</span></p>
+<p>Data di nascita: <span class="blank">__________</span>   Sesso: <span class="blank">__________</span></p>
 <!-- Erklärung zu personal (it) hier ergänzen -->
 <div aria-label="Spiegazione personal" class="explanation" data-label="Spiegazione" data-placeholder="Spiegazione …">Inserisca qui nuovamente i suoi dati di persona, per evitare errori.</div></section>
 <section class="question" data-question="1.6.1" id="it-q-1.6.1">
@@ -5719,6 +5782,7 @@ E-mail: <a href="mailto:tb-zentrum@hamburg-mitte.hamburg.de">tb-zentrum@hamburg-
 <div aria-label="Spiegazione 1.6.2.2" class="explanation" data-label="Spiegazione" data-placeholder="Spiegazione …">Non si intende il caso attuale, a causa del quale l’abbiamo invitata all’ufficio di sanità pubblica (Gesundheitsamt) come persona di contatto. Si chiede se, prima di questo caso, abbia avuto contatti con una persona malata di tubercolosi.</div></section>
 <section class="question" data-question="1.6.3" id="it-q-1.6.3">
 <h2><bdi class="number" dir="ltr">1.6.3</bdi> Conosce la persona con tubercolosi?</h2>
+<div class="choices" data-yesno="known"><span class="choice">☐ NO</span><span class="choice">☐ SÌ</span></div>
 <p>Se la conosce, durata complessiva del contatto fino alla diagnosi o all’inizio delle misure protettive (ad es. mascherina, isolamento) — di norma le 6 settimane precedenti, sommate, non necessariamente continuative:</p>
 <div class="choices"><span class="choice">☐ &lt;8 h</span><span class="choice">☐ 8-40 h</span><span class="choice">☐ &gt;40 h</span><span class="choice">☐ Contatto breve intensivo</span></div>
 <!-- Erklärung zu 1.6.3 (it) hier ergänzen -->
@@ -5780,6 +5844,7 @@ E-mail: <a href="mailto:tb-zentrum@hamburg-mitte.hamburg.de">tb-zentrum@hamburg-
 <p>Indirizzo e-mail:</p><div aria-label="Indirizzo e-mail:" class="email-boxes" dir="ltr" role="group"><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
 <p>Consenso:</p>
 <div class="choices"><span class="choice">☐ No</span><span class="choice">☐ Sì, acconsento</span></div>
+<p class="signature-line" data-sign="1">Firma: <span class="blank">____________________</span></p>
 <!-- Erklärung zu consent (it) hier ergänzen -->
 <div aria-label="Spiegazione consent" class="explanation" data-label="Spiegazione" data-placeholder="Spiegazione …">Le scriveremo per e-mail solo se è d’accordo. Scriva il suo indirizzo e-mail in stampatello, un carattere per casella, e in modo così leggibile che chiunque possa leggerlo. Perché? Dobbiamo ricopiare la sua scrittura a mano. Basta una sola lettera letta male (ad esempio l e I, 0 e O, u e v, a e o) perché la nostra e-mail non Le arrivi o, peggio, arrivi a una persona estranea. Scriva il segno @ e i punti con particolare chiarezza e non usi il corsivo.</div></section>
 <aside aria-labelledby="info-it" class="further-info"><h2 id="info-it">Ulteriori informazioni</h2><p class="external-notice">I seguenti link portano a siti web esterni, di cui l’Ufficio di sanità pubblica di Hamburg-Mitte non è responsabile.</p><ul><li><a href="https://explaintb.org/en/info" rel="noopener noreferrer" target="_blank">Informazioni sulla tubercolosi <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/35" rel="noopener noreferrer" target="_blank">IGRA – Esame del sangue per l’infezione tubercolare <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/36" rel="noopener noreferrer" target="_blank">LTBI – Infezione tubercolare latente <span class="external-label">· ExplainTB ↗</span></a></li></ul></aside>
@@ -5847,7 +5912,7 @@ Email: <a href="mailto:tb-zentrum@hamburg-mitte.hamburg.de">tb-zentrum@hamburg-m
 <section class="question personal" data-question="personal" id="ko-q-personal">
 <p>확인을 위해 아래 정보를 기입해 주십시오. 올바르게 호칭해 드리기 위한 것입니다:</p>
 <p>성: <span class="blank">__________</span>   이름: <span class="blank">__________</span></p>
-<p>생년월일: <span class="blank">__________</span>   성별: <span class="blank">__________</span>   나이: <span class="blank">__________</span></p>
+<p>생년월일: <span class="blank">__________</span>   성별: <span class="blank">__________</span></p>
 <!-- Erklärung zu personal (ko) hier ergänzen -->
 <div aria-label="설명 personal" class="explanation" data-label="설명" data-placeholder="설명 …">오류를 방지하기 위해 이곳에 정보를 직접 다시 한 번 기입해 주십시오.</div></section>
 <section class="question" data-question="1.6.1" id="ko-q-1.6.1">
@@ -5874,6 +5939,7 @@ Email: <a href="mailto:tb-zentrum@hamburg-mitte.hamburg.de">tb-zentrum@hamburg-m
 <div aria-label="설명 1.6.2.2" class="explanation" data-label="설명" data-placeholder="설명 …">현재 사례(접촉자로서 보건소(Gesundheitsamt)에 오시도록 안내드린 계기가 된 사례)를 말하는 것이 아닙니다. 이 사례 이전에 결핵 환자와 접촉한 적이 있었는지를 묻는 것입니다.</div></section>
 <section class="question" data-question="1.6.3" id="ko-q-1.6.3">
 <h2><bdi class="number" dir="ltr">1.6.3</bdi> 결핵 환자를 알고 계십니까?</h2>
+<div class="choices" data-yesno="known"><span class="choice">☐ 아니요</span><span class="choice">☐ 예</span></div>
 <p>아는 경우, 진단 또는 마스크·격리 등 보호 조치가 시작된 시점까지의 총 접촉 시간 — 일반적으로 그 이전 6주, 모두 합산, 연속일 필요 없음:</p>
 <div class="choices"><span class="choice">☐ &lt;8 h</span><span class="choice">☐ 8-40 h</span><span class="choice">☐ &gt;40 h</span><span class="choice">☐ 집중적인 단시간 접촉</span></div>
 <!-- Erklärung zu 1.6.3 (ko) hier ergänzen -->
@@ -5935,6 +6001,7 @@ Email: <a href="mailto:tb-zentrum@hamburg-mitte.hamburg.de">tb-zentrum@hamburg-m
 <p>이메일 주소:</p><div aria-label="이메일 주소:" class="email-boxes" dir="ltr" role="group"><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
 <p>동의 여부:</p>
 <div class="choices"><span class="choice">☐ 아니요</span><span class="choice">☐ 예, 동의합니다</span></div>
+<p class="signature-line" data-sign="1">서명: <span class="blank">____________________</span></p>
 <!-- Erklärung zu consent (ko) hier ergänzen -->
 <div aria-label="설명 consent" class="explanation" data-label="설명" data-placeholder="설명 …">동의하신 경우에만 이메일로 연락드립니다. 이메일 주소를 대문자 인쇄체로, 한 칸에 한 글자씩, 누구나 읽을 수 있도록 또렷하게 적어 주세요. 왜일까요? 저희는 손으로 쓰신 글씨를 다시 입력해야 합니다. 글자 하나만 잘못 읽어도(예: l과 I, 0과 O, u와 v, a와 o) 저희 이메일이 전달되지 않거나, 더 나쁘게는 모르는 사람에게 전달될 수 있습니다. @ 기호와 점은 특히 또렷하게 쓰시고 흘려 쓰지 마세요.</div></section>
 <aside aria-labelledby="info-ko" class="further-info"><h2 id="info-ko">추가 정보</h2><p class="external-notice">다음 링크는 외부 웹사이트로 연결되며, 함부르크-미테 보건소는 이에 대해 책임지지 않습니다.</p><ul><li><a href="https://explaintb.org/en/info" rel="noopener noreferrer" target="_blank">결핵에 대한 정보 <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/35" rel="noopener noreferrer" target="_blank">IGRA – 결핵 감염 혈액 검사 <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/36" rel="noopener noreferrer" target="_blank">LTBI – 잠복 결핵 감염 <span class="external-label">· ExplainTB ↗</span></a></li></ul></aside>
@@ -6002,7 +6069,7 @@ Caffamacherreihe 1–3, 20355 Hamburg<br/>
 <section class="question personal" data-question="personal" id="zh-q-personal">
 <p>为便于核对，请填写您的个人信息，以便我们正确称呼您：</p>
 <p>姓： <span class="blank">__________</span>   名： <span class="blank">__________</span></p>
-<p>出生日期： <span class="blank">__________</span>   性别：<span class="blank">__________</span>   年龄： <span class="blank">__________</span></p>
+<p>出生日期： <span class="blank">__________</span>   性别：<span class="blank">__________</span></p>
 <!-- Erklärung zu personal (zh) hier ergänzen -->
 <div aria-label="说明 personal" class="explanation" data-label="说明" data-placeholder="说明 …">为避免出错，请在此再次亲自填写您的个人信息。</div></section>
 <section class="question" data-question="1.6.1" id="zh-q-1.6.1">
@@ -6029,6 +6096,7 @@ Caffamacherreihe 1–3, 20355 Hamburg<br/>
 <div aria-label="说明 1.6.2.2" class="explanation" data-label="说明" data-placeholder="说明 …">指的不是本次病例，即导致我们邀请您作为接触者前来卫生局（Gesundheitsamt）的那一病例。我们问的是，在本次病例之前，您是否曾接触过结核病患者。</div></section>
 <section class="question" data-question="1.6.3" id="zh-q-1.6.3">
 <h2><bdi class="number" dir="ltr">1.6.3</bdi> 您认识那位结核病患者吗？</h2>
+<div class="choices" data-yesno="known"><span class="choice">☐ 否</span><span class="choice">☐ 是</span></div>
 <p>如果认识，累计接触时长，直到确诊或开始采取防护措施（如口罩、隔离）为止——通常为此前的6周，累计计算，不必连续：</p>
 <div class="choices"><span class="choice">☐ &lt;8 h</span><span class="choice">☐ 8-40 h</span><span class="choice">☐ &gt;40 h</span><span class="choice">☐ 近距离短时密切接触</span></div>
 <!-- Erklärung zu 1.6.3 (zh) hier ergänzen -->
@@ -6090,6 +6158,7 @@ Caffamacherreihe 1–3, 20355 Hamburg<br/>
 <p>电子邮件地址：</p><div aria-label="电子邮件地址：" class="email-boxes" dir="ltr" role="group"><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
 <p>同意：</p>
 <div class="choices"><span class="choice">☐ 否</span><span class="choice">☐ 是，我同意</span></div>
+<p class="signature-line" data-sign="1">签名： <span class="blank">____________________</span></p>
 <!-- Erklärung zu consent (zh) hier ergänzen -->
 <div aria-label="说明 consent" class="explanation" data-label="说明" data-placeholder="说明 …">只有在您同意的情况下，我们才会通过电子邮件与您联系。请用大写印刷体填写您的电子邮件地址，每个格子一个字符，并写得清晰易读，让任何人都能看清。为什么？因为我们需要把您的手写内容录入电脑。哪怕有一个字母被看错（例如 l 和 I、0 和 O、u 和 v、a 和 o），我们的邮件就可能无法送达您，或者更糟，发给了陌生人。请把 @ 符号和圆点写得特别清楚，不要连笔书写。</div></section>
 <aside aria-labelledby="info-zh" class="further-info"><h2 id="info-zh">更多信息</h2><p class="external-notice">以下链接指向外部网站，汉堡-米特区卫生局对这些网站不承担责任。</p><ul><li><a href="https://explaintb.org/en/info" rel="noopener noreferrer" target="_blank">有关结核病的信息 <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/35" rel="noopener noreferrer" target="_blank">IGRA – 结核感染血液检测 <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/36" rel="noopener noreferrer" target="_blank">LTBI – 潜伏性结核感染 <span class="external-label">· ExplainTB ↗</span></a></li></ul></aside>
@@ -6157,7 +6226,7 @@ Caffamacherreihe 1–3, 20355 Hamburg<br/>
 <section class="question personal" data-question="personal" id="yue-q-personal">
 <p>為方便核對，請填寫您的個人資料，以便我們正確稱呼您：</p>
 <p>姓： <span class="blank">__________</span>   名： <span class="blank">__________</span></p>
-<p>出生日期： <span class="blank">__________</span>   性別：<span class="blank">__________</span>   年齡： <span class="blank">__________</span></p>
+<p>出生日期： <span class="blank">__________</span>   性別：<span class="blank">__________</span></p>
 <!-- Erklärung zu personal (yue) hier ergänzen -->
 <div aria-label="說明 personal" class="explanation" data-label="說明" data-placeholder="說明 …">為免出錯，請在此再次親自填寫您的個人資料。</div></section>
 <section class="question" data-question="1.6.1" id="yue-q-1.6.1">
@@ -6184,6 +6253,7 @@ Caffamacherreihe 1–3, 20355 Hamburg<br/>
 <div aria-label="說明 1.6.2.2" class="explanation" data-label="說明" data-placeholder="說明 …">指的不是今次個案，即導致我們邀請您以接觸者身分前來衞生局（Gesundheitsamt）的個案。我們想知道的是，在今次個案之前，您是否曾接觸過結核病患者。</div></section>
 <section class="question" data-question="1.6.3" id="yue-q-1.6.3">
 <h2><bdi class="number" dir="ltr">1.6.3</bdi> 您認識那位結核病患者嗎？</h2>
+<div class="choices" data-yesno="known"><span class="choice">☐ 否</span><span class="choice">☐ 是</span></div>
 <p>如果認識，累計接觸時數，直至確診或開始採取防護措施（如口罩、隔離）為止——通常為之前的6星期，累計計算，不必連續：</p>
 <div class="choices"><span class="choice">☐ &lt;8 h</span><span class="choice">☐ 8-40 h</span><span class="choice">☐ &gt;40 h</span><span class="choice">☐ 短時間密切接觸</span></div>
 <!-- Erklärung zu 1.6.3 (yue) hier ergänzen -->
@@ -6245,6 +6315,7 @@ Caffamacherreihe 1–3, 20355 Hamburg<br/>
 <p>電郵地址：</p><div aria-label="電郵地址：" class="email-boxes" dir="ltr" role="group"><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
 <p>同意：</p>
 <div class="choices"><span class="choice">☐ 否</span><span class="choice">☐ 是，本人同意</span></div>
+<p class="signature-line" data-sign="1">簽名： <span class="blank">____________________</span></p>
 <!-- Erklärung zu consent (yue) hier ergänzen -->
 <div aria-label="說明 consent" class="explanation" data-label="說明" data-placeholder="說明 …">只有在您同意的情況下，我們才會以電郵與您聯絡。請用大楷印刷體填寫您的電郵地址，每個格子一個字元，並寫得清楚易讀，讓任何人都看得明白。為甚麼？因為我們需要把您的手寫內容輸入電腦。只要有一個字母被看錯（例如 l 和 I、0 和 O、u 和 v、a 和 o），我們的電郵就可能無法送達您，更糟的是會寄給陌生人。請把 @ 符號和圓點寫得特別清楚，不要連筆書寫。</div></section>
 <aside aria-labelledby="info-yue" class="further-info"><h2 id="info-yue">更多資訊</h2><p class="external-notice">以下連結指向外部網站，漢堡-米特區衞生局對這些網站不承擔責任。</p><ul><li><a href="https://explaintb.org/en/info" rel="noopener noreferrer" target="_blank">有關結核病的資訊 <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/35" rel="noopener noreferrer" target="_blank">IGRA – 結核感染驗血檢測 <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/36" rel="noopener noreferrer" target="_blank">LTBI – 潛伏性結核感染 <span class="external-label">· ExplainTB ↗</span></a></li></ul></aside>
@@ -11290,7 +11361,7 @@ Email: <a href="mailto:tb-zentrum@hamburg-mitte.hamburg.de">tb-zentrum@hamburg-m
 <section class="question personal" data-question="personal" id="ne-q-personal">
 <p>तपाईंलाई सही तरिकाले सम्बोधन गर्न र विवरण मिलाउन आफ्नो विवरण लेख्नुहोस्:</p>
 <p>थर: <span class="blank">__________</span>   नाम: <span class="blank">__________</span></p>
-<p>जन्ममिति: <span class="blank">__________</span>   लिङ्ग: <span class="blank">__________</span>   उमेर: <span class="blank">__________</span></p>
+<p>जन्ममिति: <span class="blank">__________</span>   लिङ्ग: <span class="blank">__________</span></p>
 <!-- personal का लागि यहाँ व्याख्या थप्नुहोस् -->
 <div aria-label="व्याख्या व्यक्तिगत विवरण" class="explanation" data-label="व्याख्या" data-placeholder="व्याख्या …">त्रुटि हुन नदिन आफ्नो विवरण फेरि आफैं लेख्नुहोस्।</div></section>
 <section class="question" data-question="1.6.1" id="ne-q-1.6.1">
@@ -11317,6 +11388,7 @@ Email: <a href="mailto:tb-zentrum@hamburg-mitte.hamburg.de">tb-zentrum@hamburg-m
 <div aria-label="व्याख्या 1.6.2.2" class="explanation" data-label="व्याख्या" data-placeholder="व्याख्या …">यसमा अहिले तपाईंलाई सम्पर्क व्यक्तिको रूपमा स्वास्थ्य विभागमा बोलाउने कारण बनेको घटना होइन। त्यस घटनाअघि क्षयरोग भएको व्यक्तिसँग सम्पर्क भएको थियो कि भनेर सोधिएको हो।</div></section>
 <section class="question" data-question="1.6.3" id="ne-q-1.6.3">
 <h2><bdi class="number" dir="ltr">1.6.3</bdi> क्षयरोग भएको व्यक्ति चिन्नुहुन्छ?</h2>
+<div class="choices" data-yesno="known"><span class="choice">☐ छैन</span><span class="choice">☐ छ</span></div>
 <p>चिन्नुहुन्छ भने निदान वा सुरक्षा उपाय (मास्क, अलग राख्ने आदि) सुरु हुनुअघिको कुल सम्पर्क अवधि: सामान्यतः त्यसअघिका ६ हप्ताका समय जोड्नुहोस्; लगातार हुनुपर्दैन।</p>
 <div class="choices"><span class="choice">☐ ८ घण्टाभन्दा कम</span><span class="choice">☐ ८–४० घण्टा</span><span class="choice">☐ ४० घण्टाभन्दा बढी</span><span class="choice">☐ छोटो तर गहन सम्पर्क</span></div>
 <!-- 1.6.3 का लागि यहाँ व्याख्या थप्नुहोस् -->
@@ -11378,6 +11450,7 @@ Email: <a href="mailto:tb-zentrum@hamburg-mitte.hamburg.de">tb-zentrum@hamburg-m
 <p>इमेल ठेगाना:</p><div aria-label="इमेल ठेगाना:" class="email-boxes" dir="ltr" role="group"><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
 <p>सहमति:</p>
 <div class="choices"><span class="choice">☐ छैन</span><span class="choice">☐ हो, मञ्जुर छ</span></div>
+<p class="signature-line" data-sign="1">हस्ताक्षर: <span class="blank">____________________</span></p>
 <!-- consent का लागि यहाँ व्याख्या थप्नुहोस् -->
 <div aria-label="व्याख्या सहमति" class="explanation" data-label="व्याख्या" data-placeholder="व्याख्या …">तपाईंले सहमति दिनुभयो भने मात्र हामी तपाईंलाई इमेल पठाउँछौँ। कृपया आफ्नो इमेल ठेगाना ठूला छापिएका अक्षरमा, प्रत्येक बाकसमा एउटा अक्षर, र जोसुकैले पढ्न सक्ने गरी स्पष्ट लेख्नुहोस्। किन? हामीले तपाईंको हातको लेखाइ टाइप गर्नुपर्छ। एउटा मात्र अक्षर गलत पढियो भने (जस्तै l र I, 0 र O, u र v, a र o) हाम्रो इमेल तपाईंसम्म नपुग्न सक्छ वा, झन् नराम्रो, अपरिचित व्यक्तिसम्म पुग्न सक्छ। @ चिन्ह र थोप्लाहरू विशेष स्पष्ट लेख्नुहोस् र जोडिएको लेखाइ प्रयोग नगर्नुहोस्।</div></section>
 <aside aria-labelledby="info-en" class="further-info"><h2 id="info-ne">थप जानकारी</h2><p class="external-notice">यी लिंक बाह्य वेबसाइटमा जान्छन्; तिनको जिम्मेवारी Hamburg-Mitte स्वास्थ्य विभागको होइन।</p><ul><li><a href="https://explaintb.org/en/info" rel="noopener noreferrer" target="_blank">क्षयरोगबारे जानकारी <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/35" rel="noopener noreferrer" target="_blank">IGRA – क्षयरोग सङ्क्रमणको रगत परीक्षण <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/36" rel="noopener noreferrer" target="_blank">LTBI – निष्क्रिय क्षयरोग सङ्क्रमण <span class="external-label">· ExplainTB ↗</span></a></li></ul></aside>
@@ -11581,7 +11654,7 @@ Caffamacherreihe 1–3, 20355 Hamburg<br/>
 <section class="question personal" data-question="personal" id="zu-q-personal">
 <p>Faka imininingwane yakho ukuze siyiqinisekise futhi sikubize ngendlela efanele:</p>
 <p>Isibongo: <span class="blank">__________</span>   Igama: <span class="blank">__________</span></p>
-<p>Usuku lokuzalwa: <span class="blank">__________</span>   Ubulili: <span class="blank">__________</span>   Iminyaka: <span class="blank">__________</span></p>
+<p>Usuku lokuzalwa: <span class="blank">__________</span>   Ubulili: <span class="blank">__________</span></p>
 <!-- Engeza incazelo ye-personal lapha -->
 <div aria-label="Incazelo imininingwane yakho" class="explanation" data-label="Incazelo" data-placeholder="Incazelo …">Faka imininingwane yakho futhi wena uqobo ukuze kugwenywe amaphutha.</div></section>
 <section class="question" data-question="1.6.1" id="zu-q-1.6.1">
@@ -11608,6 +11681,7 @@ Caffamacherreihe 1–3, 20355 Hamburg<br/>
 <div aria-label="Incazelo 1.6.2.2" class="explanation" data-label="Incazelo" data-placeholder="Incazelo …">Akushiwo isigameko samanje esibangele ukuba sikumeme njengomuntu othintene nesiguli. Sibuza ukuthi ngaphambi kwaso wake wathintana yini nomuntu onesifo sofuba.</div></section>
 <section class="question" data-question="1.6.3" id="zu-q-1.6.3">
 <h2><bdi class="number" dir="ltr">1.6.3</bdi> Uyamazi umuntu onesifo sofuba?</h2>
+<div class="choices" data-yesno="known"><span class="choice">☐ CHA</span><span class="choice">☐ YEBO</span></div>
 <p>Uma umazi, isikhathi esiphelele sokuthintana kuze kutholakale isifo noma kuqalwe ukuvikela (imaski, ukuhlukaniswa): ngokuvamile hlanganisa amahora emasontweni ayisithupha angaphambi kwalokho; akudingeki abe elandelana.</p>
 <div class="choices"><span class="choice">☐ Ngaphansi kwamahora angu-8</span><span class="choice">☐ Amahora angu-8–40</span><span class="choice">☐ Ngaphezu kwamahora angu-40</span><span class="choice">☐ Ukuthintana okufushane kodwa okusondelene kakhulu</span></div>
 <!-- Engeza incazelo ye-1.6.3 lapha -->
@@ -11669,6 +11743,7 @@ Caffamacherreihe 1–3, 20355 Hamburg<br/>
 <p>Ikheli le-imeyili:</p><div aria-label="Ikheli le-imeyili:" class="email-boxes" dir="ltr" role="group"><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
 <p>Imvume:</p>
 <div class="choices"><span class="choice">☐ Cha</span><span class="choice">☐ Yebo, ngiyavuma</span></div>
+<p class="signature-line" data-sign="1">Isignesha: <span class="blank">____________________</span></p>
 <!-- Engeza incazelo ye-consent lapha -->
 <div aria-label="Incazelo imvume" class="explanation" data-label="Incazelo" data-placeholder="Incazelo …">Sizokubhalela nge-imeyili kuphela uma uvuma. Sicela ubhale ikheli lakho le-imeyili ngezinhlamvu ezinkulu ezicindezelwe, uhlamvu olulodwa ebhokisini ngalinye, ngokucacile ukuze noma ubani akwazi ukulifunda. Kungani? Kufanele sibhale kabusha ukubhala kwakho ngesandla. Uhlamvu olulodwa olufundwe kabi (isibonelo l no-I, 0 no-O, u no-v, a no-o) lwenza ukuthi i-imeyili yethu ingakufinyeleli noma, okubi kakhulu, ifinyelele kumuntu ongamazi. Bhala uphawu lwe-@ namachashaza ngokucacile ngokukhethekile futhi ungasebenzisi ukubhala okuxhumene.</div></section>
 <aside aria-labelledby="info-en" class="further-info"><h2 id="info-zu">Olunye ulwazi</h2><p class="external-notice">Lezi zixhumanisi ziya kumawebhusayithi angaphandle angaphansi komthwalo woMnyango Wezempilo wase-Hamburg-Mitte.</p><ul><li><a href="https://explaintb.org/en/info" rel="noopener noreferrer" target="_blank">Ulwazi ngesifo sofuba <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/35" rel="noopener noreferrer" target="_blank">IGRA – ukuhlolwa kwegazi kokutheleleka ngesifo sofuba <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/36" rel="noopener noreferrer" target="_blank">LTBI – ukutheleleka ngesifo sofuba okungasebenzi <span class="external-label">· ExplainTB ↗</span></a></li></ul></aside>
@@ -11872,7 +11947,7 @@ I-imeyili: <a href="mailto:tb-zentrum@hamburg-mitte.hamburg.de">tb-zentrum@hambu
 <section class="question personal" data-question="personal" id="id-q-personal">
 <p>Masukkan data diri untuk verifikasi agar kami dapat menyapa Anda dengan benar:</p>
 <p>Nama keluarga: <span class="blank">__________</span>   Nama depan: <span class="blank">__________</span></p>
-<p>Tanggal lahir: <span class="blank">__________</span>   Jenis kelamin: <span class="blank">__________</span>   Usia: <span class="blank">__________</span></p>
+<p>Tanggal lahir: <span class="blank">__________</span>   Jenis kelamin: <span class="blank">__________</span></p>
 <!-- Tambahkan penjelasan untuk personal di sini -->
 <div aria-label="Penjelasan data pribadi" class="explanation" data-label="Penjelasan" data-placeholder="Penjelasan …">Isi kembali data diri Anda sendiri untuk menghindari kesalahan.</div></section>
 <section class="question" data-question="1.6.1" id="id-q-1.6.1">
@@ -11899,6 +11974,7 @@ I-imeyili: <a href="mailto:tb-zentrum@hamburg-mitte.hamburg.de">tb-zentrum@hambu
 <div aria-label="Penjelasan 1.6.2.2" class="explanation" data-label="Penjelasan" data-placeholder="Penjelasan …">Ini bukan kasus saat ini yang menyebabkan Anda diundang sebagai kontak ke dinas kesehatan. Pertanyaannya adalah apakah sebelum kasus ini Anda pernah berkontak dengan penderita TB.</div></section>
 <section class="question" data-question="1.6.3" id="id-q-1.6.3">
 <h2><bdi class="number" dir="ltr">1.6.3</bdi> Apakah Anda mengenal orang yang menderita TB?</h2>
+<div class="choices" data-yesno="known"><span class="choice">☐ TIDAK</span><span class="choice">☐ YA</span></div>
 <p>Jika dikenal, jumlahkan lama kontak hingga diagnosis atau tindakan perlindungan (masker, isolasi) dimulai; biasanya 6 minggu sebelumnya, tidak harus terus-menerus.</p>
 <div class="choices"><span class="choice">☐ &lt;8 jam</span><span class="choice">☐ 8–40 jam</span><span class="choice">☐ &gt;40 jam</span><span class="choice">☐ Kontak singkat yang intens</span></div>
 <!-- Tambahkan penjelasan untuk 1.6.3 di sini -->
@@ -11960,6 +12036,7 @@ I-imeyili: <a href="mailto:tb-zentrum@hamburg-mitte.hamburg.de">tb-zentrum@hambu
 <p>Alamat surel:</p><div aria-label="Alamat surel:" class="email-boxes" dir="ltr" role="group"><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
 <p>Persetujuan:</p>
 <div class="choices"><span class="choice">☐ Tidak</span><span class="choice">☐ Ya, saya setuju</span></div>
+<p class="signature-line" data-sign="1">Tanda tangan: <span class="blank">____________________</span></p>
 <!-- Tambahkan penjelasan untuk consent di sini -->
 <div aria-label="Penjelasan persetujuan" class="explanation" data-label="Penjelasan" data-placeholder="Penjelasan …">Kami hanya akan menulis kepada Anda lewat surel jika Anda setuju. Mohon tulis alamat surel Anda dengan huruf cetak kapital, satu karakter per kotak, dan cukup jelas agar siapa pun dapat membacanya. Mengapa? Kami harus mengetik ulang tulisan tangan Anda. Satu huruf yang salah dibaca saja (misalnya l dan I, 0 dan O, u dan v, a dan o) dapat membuat surel kami tidak sampai kepada Anda atau, lebih buruk lagi, sampai kepada orang asing. Tulis tanda @ dan titik dengan sangat jelas dan jangan gunakan tulisan sambung.</div></section>
 <aside aria-labelledby="info-en" class="further-info"><h2 id="info-id">Informasi lebih lanjut</h2><p class="external-notice">Tautan berikut menuju situs eksternal yang bukan tanggung jawab Dinas Kesehatan Hamburg-Mitte.</p><ul><li><a href="https://explaintb.org/en/info" rel="noopener noreferrer" target="_blank">Informasi tentang tuberkulosis <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/35" rel="noopener noreferrer" target="_blank">IGRA – tes darah untuk infeksi TB <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/36" rel="noopener noreferrer" target="_blank">LTBI – infeksi tuberkulosis laten <span class="external-label">· ExplainTB ↗</span></a></li></ul></aside>
@@ -12163,7 +12240,7 @@ Email: <a href="mailto:tb-zentrum@hamburg-mitte.hamburg.de">tb-zentrum@hamburg-m
 <section class="question personal" data-question="personal" id="tl-q-personal">
 <p>Ilagay ang iyong mga detalye para matiyak na tama ang pagkakakilanlan at pagtawag sa iyo:</p>
 <p>Apelyido: <span class="blank">__________</span>   Pangalan: <span class="blank">__________</span></p>
-<p>Petsa ng kapanganakan: <span class="blank">__________</span>   Kasarian: <span class="blank">__________</span>   Edad: <span class="blank">__________</span></p>
+<p>Petsa ng kapanganakan: <span class="blank">__________</span>   Kasarian: <span class="blank">__________</span></p>
 <!-- Idagdag dito ang paliwanag para sa personal -->
 <div aria-label="Paliwanag personal na detalye" class="explanation" data-label="Paliwanag" data-placeholder="Paliwanag …">Isulat muli ang iyong mga detalye upang maiwasan ang pagkakamali.</div></section>
 <section class="question" data-question="1.6.1" id="tl-q-1.6.1">
@@ -12190,6 +12267,7 @@ Email: <a href="mailto:tb-zentrum@hamburg-mitte.hamburg.de">tb-zentrum@hamburg-m
 <div aria-label="Paliwanag 1.6.2.2" class="explanation" data-label="Paliwanag" data-placeholder="Paliwanag …">Hindi ito ang kasalukuyang kaso na dahilan ng paanyaya sa iyo bilang nakasalamuha. Ang tanong ay kung may nakasalamuha kang taong may TB bago ang kasong ito.</div></section>
 <section class="question" data-question="1.6.3" id="tl-q-1.6.3">
 <h2><bdi class="number" dir="ltr">1.6.3</bdi> Kilala mo ba ang taong may TB?</h2>
+<div class="choices" data-yesno="known"><span class="choice">☐ HINDI</span><span class="choice">☐ OO</span></div>
 <p>Kung kilala, kabuuang oras ng pakikisalamuha bago ang diagnosis o pagsisimula ng proteksiyon (mask, isolation): karaniwang pinagsamang oras sa 6 na linggo bago nito, hindi kailangang tuloy-tuloy.</p>
 <div class="choices"><span class="choice">☐ &lt;8 oras</span><span class="choice">☐ 8–40 oras</span><span class="choice">☐ &gt;40 oras</span><span class="choice">☐ Maikli ngunit matinding pagkakalantad</span></div>
 <!-- Idagdag dito ang paliwanag para sa 1.6.3 -->
@@ -12251,6 +12329,7 @@ Email: <a href="mailto:tb-zentrum@hamburg-mitte.hamburg.de">tb-zentrum@hamburg-m
 <p>Email address:</p><div aria-label="Email address:" class="email-boxes" dir="ltr" role="group"><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
 <p>Pahintulot:</p>
 <div class="choices"><span class="choice">☐ Hindi</span><span class="choice">☐ Oo, pumapayag ako</span></div>
+<p class="signature-line" data-sign="1">Lagda: <span class="blank">____________________</span></p>
 <!-- Idagdag dito ang paliwanag para sa consent -->
 <div aria-label="Paliwanag pahintulot" class="explanation" data-label="Paliwanag" data-placeholder="Paliwanag …">Susulatan lang namin kayo sa email kung sumasang-ayon kayo. Pakisulat ang inyong email address sa malalaking letrang palimbag, isang karakter bawat kahon, at sapat na malinaw para mabasa ng sinuman. Bakit? Kailangan naming i-type ang inyong sulat-kamay. Isang maling nabasang letra lang (halimbawa l at I, 0 at O, u at v, a at o) ay maaaring hindi makarating sa inyo ang aming email o, mas masama, mapunta sa ibang tao. Isulat nang lalong malinaw ang simbolong @ at ang mga tuldok, at huwag gumamit ng magkakadugtong na sulat-kamay.</div></section>
 <aside aria-labelledby="info-en" class="further-info"><h2 id="info-tl">Karagdagang impormasyon</h2><p class="external-notice">Ang mga link ay papunta sa panlabas na website na hindi pananagutan ng Kagawaran ng Kalusugan Hamburg-Mitte.</p><ul><li><a href="https://explaintb.org/en/info" rel="noopener noreferrer" target="_blank">Impormasyon tungkol sa tuberkulosis <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/35" rel="noopener noreferrer" target="_blank">IGRA – pagsusuri ng dugo para sa impeksiyon ng TB <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/36" rel="noopener noreferrer" target="_blank">LTBI – latent na impeksiyon ng tuberkulosis <span class="external-label">· ExplainTB ↗</span></a></li></ul></aside>
@@ -12455,7 +12534,7 @@ Email: <a href="mailto:tb-zentrum@hamburg-mitte.hamburg.de">tb-zentrum@hamburg-m
 <section class="question personal" data-question="personal" id="hu-q-personal">
 <p>Kérjük, ellenőrzés céljából adja meg az adatait, hogy helyesen tudjuk megszólítani:</p>
 <p>Vezetéknév: <span class="blank">__________</span>   Keresztnév: <span class="blank">__________</span></p>
-<p>Születési dátum: <span class="blank">__________</span>   Nem: <span class="blank">__________</span>   Életkor: <span class="blank">__________</span></p>
+<p>Születési dátum: <span class="blank">__________</span>   Nem: <span class="blank">__________</span></p>
 <!-- Itt adjon hozzá magyarázatot: personal -->
 <div aria-label="Magyarázat személyes adatok" class="explanation" data-label="Magyarázat" data-placeholder="Magyarázat …">A hibák elkerülése érdekében kérjük, itt is saját maga adja meg az adatait.</div></section>
 <section class="question" data-question="1.6.1" id="hu-q-1.6.1">
@@ -12482,6 +12561,7 @@ Email: <a href="mailto:tb-zentrum@hamburg-mitte.hamburg.de">tb-zentrum@hamburg-m
 <div aria-label="Magyarázat 1.6.2.2" class="explanation" data-label="Magyarázat" data-placeholder="Magyarázat …">Nem a jelenlegi esetre gondolunk, amely miatt kontakt személyként behívtuk a közegészségügyi hivatalba (Gesundheitsamt). A kérdés az, hogy ezt megelőzően volt-e kapcsolatban tuberkulózisban szenvedő személlyel.</div></section>
 <section class="question" data-question="1.6.3" id="hu-q-1.6.3">
 <h2><bdi class="number" dir="ltr">1.6.3</bdi> Ismeri a tuberkulózisban szenvedő személyt?</h2>
+<div class="choices" data-yesno="known"><span class="choice">☐ NEM</span><span class="choice">☐ IGEN</span></div>
 <p>Ha ismeri, a kontaktus teljes időtartama a diagnózisig vagy a védőintézkedések (például maszk, elkülönítés) kezdetéig: általában az azt megelőző 6 hét időtartamai összeadva, nem feltétlenül folyamatosan:</p>
 <div class="choices"><span class="choice">☐ &lt;8 óra</span><span class="choice">☐ 8–40 óra</span><span class="choice">☐ &gt;40 óra</span><span class="choice">☐ Rövid, intenzív kontaktus</span></div>
 <!-- Itt adjon hozzá magyarázatot: 1.6.3 -->
@@ -12543,6 +12623,7 @@ Email: <a href="mailto:tb-zentrum@hamburg-mitte.hamburg.de">tb-zentrum@hamburg-m
 <p>E-mail-cím:</p><div aria-label="E-mail-cím:" class="email-boxes" dir="ltr" role="group"><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
 <p>Hozzájárulás:</p>
 <div class="choices"><span class="choice">☐ Nem</span><span class="choice">☐ Igen, hozzájárulok</span></div>
+<p class="signature-line" data-sign="1">Aláírás: <span class="blank">____________________</span></p>
 <!-- Itt adjon hozzá magyarázatot: consent -->
 <div aria-label="Magyarázat hozzájárulás" class="explanation" data-label="Magyarázat" data-placeholder="Magyarázat …">E-mailben csak akkor írunk Önnek, ha egyetért. Kérjük, e-mail-címét nyomtatott nagybetűkkel írja be, négyzetenként egy karakterrel, és olyan olvashatóan, hogy bárki el tudja olvasni. Miért? A kézírását át kell gépelnünk. Egyetlen rosszul olvasott betű (például l és I, 0 és O, u és v, a és o) is elég ahhoz, hogy e-mailünk ne érjen el Önhöz, vagy ami még rosszabb, idegenhez kerüljön. A @ jelet és a pontokat különösen olvashatóan írja, és ne használjon folyó kézírást.</div></section>
 <aside aria-labelledby="info-en" class="further-info"><h2 id="info-hu">További információk</h2><p class="external-notice">Az alábbi hivatkozások külső weboldalakra vezetnek, amelyekért a Hamburg-Mitte Közegészségügyi Hivatal nem felelős.</p><ul><li><a href="https://explaintb.org/en/info" rel="noopener noreferrer" target="_blank">Tájékoztatás a tuberkulózisról <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/35" rel="noopener noreferrer" target="_blank">IGRA – vérvizsgálat a tuberkulózisfertőzés kimutatására <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/36" rel="noopener noreferrer" target="_blank">LTBI – látens tuberkulózisfertőzés <span class="external-label">· ExplainTB ↗</span></a></li></ul></aside>
@@ -12555,7 +12636,7 @@ Email: <a href="mailto:tb-zentrum@hamburg-mitte.hamburg.de">tb-zentrum@hamburg-m
 <section class="question personal" data-question="personal" id="ka-q-personal">
 <p>გთხოვთ, შეიყვანოთ თქვენი მონაცემები გადამოწმებისთვის, რათა სწორად მოგმართოთ:</p>
 <p>გვარი: <span class="blank">__________</span>   სახელი: <span class="blank">__________</span></p>
-<p>დაბადების თარიღი: <span class="blank">__________</span>   სქესი: <span class="blank">__________</span>   ასაკი: <span class="blank">__________</span></p>
+<p>დაბადების თარიღი: <span class="blank">__________</span>   სქესი: <span class="blank">__________</span></p>
 <!-- Erklärung zu personal (ka) hier ergänzen -->
 <div aria-label="განმარტება პირადი მონაცემები" class="explanation" data-label="განმარტება" data-placeholder="განმარტება …">შეცდომების თავიდან ასაცილებლად, გთხოვთ, თქვენი მონაცემები აქ კიდევ ერთხელ თავად ჩაწეროთ.</div></section>
 <section class="question" data-question="1.6.1" id="ka-q-1.6.1">
@@ -12582,6 +12663,7 @@ Email: <a href="mailto:tb-zentrum@hamburg-mitte.hamburg.de">tb-zentrum@hamburg-m
 <div aria-label="განმარტება 1.6.2.2" class="explanation" data-label="განმარტება" data-placeholder="განმარტება …">ეს არ ეხება ამჟამინდელ შემთხვევას, რის გამოც კონტაქტურ პირად გიწვიეთ ჯანდაცვის სამსახურში (Gesundheitsamt). კითხვა ისაა, გქონდათ თუ არა ამ შემთხვევამდე კონტაქტი ტუბერკულოზით დაავადებულ ადამიანთან.</div></section>
 <section class="question" data-question="1.6.3" id="ka-q-1.6.3">
 <h2><bdi class="number" dir="ltr">1.6.3</bdi> იცნობთ თუ არა ტუბერკულოზით დაავადებულ პირს?</h2>
+<div class="choices" data-yesno="known"><span class="choice">☐ არა</span><span class="choice">☐ დიახ</span></div>
 <p>თუ იცნობთ, კონტაქტის ჯამური ხანგრძლივობა დიაგნოზის დასმამდე ან დამცავი ზომების დაწყებამდე (მაგ. სახის ნიღაბი, იზოლაცია) — ჩვეულებრივ, მანამდე 6 კვირის განმავლობაში, ჯამურად, სულაც არა აუცილებლად უწყვეტად:</p>
 <div class="choices"><span class="choice">☐ &lt;8 სთ</span><span class="choice">☐ 8-40 სთ</span><span class="choice">☐ &gt;40 სთ</span><span class="choice">☐ მოკლე ინტენსიური კონტაქტი</span></div>
 <!-- Erklärung zu 1.6.3 (ka) hier ergänzen -->
@@ -12643,6 +12725,7 @@ Email: <a href="mailto:tb-zentrum@hamburg-mitte.hamburg.de">tb-zentrum@hamburg-m
 <p>ელფოსტის მისამართი:</p><div aria-label="ელფოსტის მისამართი:" class="email-boxes" dir="ltr" role="group"><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="email-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
 <p>თანხმობა:</p>
 <div class="choices"><span class="choice">☐ არა</span><span class="choice">☐ დიახ, ვეთანხმები</span></div>
+<p class="signature-line" data-sign="1">ხელმოწერა: <span class="blank">____________________</span></p>
 <!-- Erklärung zu consent (ka) hier ergänzen -->
 <div aria-label="განმარტება თანხმობა" class="explanation" data-label="განმარტება" data-placeholder="განმარტება …">ელფოსტით მოგწერთ მხოლოდ თანხმობის შემთხვევაში. გთხოვთ, ელფოსტის მისამართი დაწეროთ დიდი ასოებით, თითო უჯრაში თითო სიმბოლო, და იმდენად გარკვევით, რომ ყველას შეეძლოს წაკითხვა. რატომ? ჩვენ მოგვიწევს თქვენი ხელნაწერის აკრეფა. ერთი არასწორად წაკითხული ასოც კი (მაგალითად l და I, 0 და O, u და v, a და o) ნიშნავს, რომ ჩვენი ელფოსტა ვერ მოგწვდებათ ან, რაც უარესია, უცხო ადამიანს მიუვა. განსაკუთრებით გარკვევით დაწერეთ @ ნიშანი და წერტილები და ნუ გამოიყენებთ შეერთებულ ხელწერას.</div></section>
 <aside aria-labelledby="info-ka" class="further-info"><h2 id="info-ka">დამატებითი ინფორმაცია</h2><p class="external-notice">ქვემოთ მოცემული ბმულები გადაგიყვანთ გარე ვებგვერდებზე, რომლებზეც ჰამბურგ-მიტეს ჯანდაცვის სამსახური პასუხისმგებელი არ არის.</p><ul><li><a href="https://explaintb.org/en/info" rel="noopener noreferrer" target="_blank">ინფორმაცია ტუბერკულოზის შესახებ <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/35" rel="noopener noreferrer" target="_blank">IGRA – სისხლის ანალიზი ტუბერკულოზით დაინფიცირებაზე <span class="external-label">· ExplainTB ↗</span></a></li><li><a href="https://explaintb.org/en/info/36" rel="noopener noreferrer" target="_blank">LTBI – ლატენტური ტუბერკულოზური ინფექცია <span class="external-label">· ExplainTB ↗</span></a></li></ul></aside>
